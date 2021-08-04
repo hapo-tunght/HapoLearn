@@ -1,0 +1,18 @@
+
+
+
+.body {
+  background-color: white;
+  width: 1000px;
+  height: 150px;
+  &-hapo-learn-banner {
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+    &-icon {
+      color: red;
+    }
+
+  }
+
+}
