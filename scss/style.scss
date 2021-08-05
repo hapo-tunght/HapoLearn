@@ -4,13 +4,15 @@
 // HEADER-FLUID
 .header-fluid {
   background-color: rgb(192, 233, 43);
-  position: absolute;
+  position: relative;
   width: 1440px;
   height: 150px;
+  .head-fluid-navbar {
+    ul{
+      float: right;
+    }
+  }
 
 }
-// CLOSE HEADER-FLUID
 
-// BODY
 
-// CLOSE FOOTER
