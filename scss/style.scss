@@ -1,18 +1,28 @@
+@import 'variable';
 
-
-
-.body {
-  background-color: white;
-  width: 1000px;
+.header {
   height: 150px;
-  &-hapo-learn-banner {
-    background-color: aqua;
-    width: 500px;
-    height: 100px;
-    &-icon {
-      color: red;
+  .navbar {
+    height: 100%;
+    background: white;
+    .navbar-branch-element {
+      position: absolute;
+      left: 8.96%;
+      right: 67.42%;
+      top: 24%;
+      bottom: 29.33%;
     }
-
+    .navbar-toggler-element {
+      border: 0;
+      outline: 0;
+    }
+    .navbar-collapse-element ul {
+      font-family: $font_Open_Sans ;
+      font-size: 14px;
+      line-height: 19px;
+      font-style: normal;
+      font-weight: bold;
+      color: #505353;
+    }
   }
-
 }
