@@ -5,71 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/reset.css">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- Tittle -->
     <title>HapoLearn</title>
 </head>
-
-<body>
     <!-- HEADER -->
-    <header id="header" class="header-fluid">
-        Header-fluid
-        <nav class="head-fluid-navbar">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ALL COURSES</a></li>
-                <li><a href="#">LOGIN/REGISTER</a></li>
-                <li><a href="#">PROFILE</a></li>
-            </ul>
+    <header id="header" class="container-fluid position-relative p-0 header">
+        <nav class="navbar container-fluid navbar-expand-sm navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-branch navbar-branch-element" href="#">
+                    <img src="./assets/img/hapo_Learn.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler navbar-toggler-element " type="button" data-toggle="collapse" 
+                data-target="#navbarReponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-collapse-element" id="navbarReponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ALL COURSES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">LOGIN/REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PROFILE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- CLOSE HEADER -->
 
     <!-- BODY -->
-    <div id="body" class="body-fluid">
+    <div id="body" class="container-fluid bg-dark position-relative p-0 body">
         Body
         <div class="body-hapo-learn-banner"></div>
         <div class="container chat-box"></div>
         <div class="container main-courses"></div>
-        <div class="other couses"> </div>
-        <div class="why-hapolearn-banner"></div>
+        <div class="container other couses"> </div>
+        <div class="container-fluid why-hapolearn-banner"></div>
         <div class="container feedback-slider"></div>
-        <div class="become-a-memmber"></div>
+        <div class="container-fluid become-a-memmber"></div>
         <div class="container-fluid statistic"></div>
     </div>
     <!-- CLOSE BODY -->
 
-
     <!-- FOOTER -->
-    <footer id="footer" class="footer-fluid">
+    <footer id="footer" class="container-fluid bg-secondary p-0 footer">
         Footer
         <div class="footer-top"></div>
         <div class="footer-bottom"></div>
     </footer>
     <!-- CLOSE FOOTER -->
 
-
-    <!-- Popper and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    
 </body>
 </html>
-
