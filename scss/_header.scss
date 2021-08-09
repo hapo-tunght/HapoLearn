@@ -3,10 +3,10 @@
 .header {
   height: 150px;
   .navbar-element {
-    height: 150px;
-    background: #ffffff;
+    background-color: #ffffff !important;
     margin: 0;
     padding: 0;
+    align-items: center;
     .navbar-branch-element {
       width: 340.16px;
       height: 70px;
@@ -20,7 +20,7 @@
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
-      padding-right: 6%;
+      padding-right: 7.5%;
     }
   }
 }
@@ -52,7 +52,7 @@
 }
 
 @media only screen and(max-width: 769px) {
-  .header{
+  .header {
     height: 188px;
     position: relative;
     padding: 0;
@@ -97,7 +97,7 @@
     .navbar-element .navbar-branch-element {
       position: absolute;
       right: 30%;
-      top: 30.6% ;
+      top: 28.6% ;
       height: 35px;
       width: auto;
     }
