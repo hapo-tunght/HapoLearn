@@ -2,27 +2,79 @@
 
 .header {
   height: 150px;
-  .navbar {
-    height: 100%;
-    background: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  .navbar-element {
+    height: 150px;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
     .navbar-branch-element {
-      position: absolute;
-      left: 8.96%;
-      right: 67.42%;
-      top: 24%;
-      bottom: 29.33%;
+      width: 340.16px;
+      height: 70px;
+      margin-left: 8.96%;
     }
     .navbar-toggler-element {
       border: 0;
       outline: 0;
     }
-    .navbar-collapse-element ul {
-      font-family: $font_Open_Sans ;
-      font-size: 14px;
-      line-height: 19px;
-      font-style: normal;
-      font-weight: bold;
-      color: #505353;
+    .navbar-collapse-element {
+      font-family: $font_Open_Sans;
+      font-weight: 700;
+      font-size: 16px;
+      padding-right: 6%;
     }
   }
+}
+.navbar-nav {
+  .nav-item {
+    .navbar-link-element {
+      color: $text_navbar_color;
+      padding: 8px 25px;
+    }
+  }
+}
+.navbar-collapse-element {
+  .navbar-nav {
+    .navbar-link-element:hover {
+      color: #ffffff !important;
+      background-color: $button_color;
+      border-radius: 17px;
+    }
+  }
+}
+@media screen and(max-width: 768px) {
+  .header{
+    height: 154px;
+    position: relative;
+    padding: 0;
+    }
+    .navbar-element {
+      background: $background_color_header_in_768px; 
+    }
+    .navbar-collapse-element {
+      margin-left: 0;
+      position: absolute;
+      left: 15%;
+      top: 82.5%;
+      font-family: $font_Open_Sans;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .navbar-branch-element {
+      margin-left: 0;
+      position: absolute;
+      left: 19%;
+      top: 25.3%;
+    }
+  .navbar-nav {
+    .nav-item {
+      .navbar-link-element {
+        color: $text_navbar_color;
+        padding: 7.5px 25px;
+      }
+    }
+  }   
+}
+
+@media screen and(max-width: 375px) {
 }
