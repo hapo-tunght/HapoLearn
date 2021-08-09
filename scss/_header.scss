@@ -2,7 +2,6 @@
 
 .header {
   height: 150px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
   .navbar-element {
     height: 150px;
     background: #ffffff;
@@ -36,45 +35,102 @@
 .navbar-collapse-element {
   .navbar-nav {
     .navbar-link-element:hover {
+      color: #ffffff ;
+      background-color: $button_color;
+      border-radius: 17px;
+    }
+  }
+}
+.navbar-nav {
+  .nav-item.active {
+    .navbar-link-element.active {
       color: #ffffff !important;
       background-color: $button_color;
       border-radius: 17px;
     }
   }
 }
-@media screen and(max-width: 768px) {
+
+@media only screen and(max-width: 769px) {
   .header{
-    height: 154px;
+    height: 188px;
     position: relative;
     padding: 0;
-    }
     .navbar-element {
       background: $background_color_header_in_768px; 
+    }
+    .navbar-branch-element {
+      margin-left: 0;
+      position: absolute;
+      margin-left: 0 !important;
+      left: 30.4%;
+      top: 39px;
     }
     .navbar-collapse-element {
       margin-left: 0;
       position: absolute;
       left: 15%;
-      top: 82.5%;
+      top: 127px;
       font-family: $font_Open_Sans;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 16px;
     }
-    .navbar-branch-element {
-      margin-left: 0;
-      position: absolute;
-      left: 19%;
-      top: 25.3%;
-    }
+  }
   .navbar-nav {
     .nav-item {
       .navbar-link-element {
         color: $text_navbar_color;
-        padding: 7.5px 25px;
+        padding: 7.5px 24px;
       }
     }
   }   
 }
 
-@media screen and(max-width: 375px) {
+@media only screen and(max-width: 575px) {
+  .header {
+    height: 65px;
+    position: relative;
+    .navbar-element {
+      height: 62px;
+      background-color: #ffffff !important;
+    }
+    .navbar-element .navbar-branch-element {
+      position: absolute;
+      right: 30%;
+      top: 30.6% ;
+      height: 35px;
+      width: auto;
+    }
+    .navbar-collapse-element {
+      background-color: #ffffff;
+      padding-right: 0 !important;
+      position: fixed;
+      top: 62px;
+      left: 0;
+      right: 0;
+      .navbar-link-element {
+        text-align: center;
+        font-size: 16px;
+        line-height: 46px;
+      }
+    }
+    .navbar-toggler-element {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 18px;
+      height: 23px;
+      margin-top: 20px;
+      margin-left: 5.07%;
+      padding: 0;
+    }
+  }
+  .navbar-nav {
+  .nav-item.active {
+    .navbar-link-element.active {
+      color: $button_color !important;
+      background-color: #ffffff;
+    }
+  }
+}
 }
