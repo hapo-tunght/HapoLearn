@@ -1,7 +1,7 @@
 @import 'variable';
 
 .header {
-  height: 150px;
+  height: 100px;
 
   .navbar-element {
     background-color: #ffffff !important;
@@ -10,9 +10,9 @@
     align-items: center;
 
     .navbar-branch-element {
-      width: 340.16px;
-      height: 70px;
-      margin-left: 8.96%;
+      width: 300px;
+      height: 65px;
+      margin-left: 130px;
     }
 
     .navbar-toggler-element {
@@ -24,7 +24,7 @@
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
-      padding-right: 7.5%;
+      padding-right: 105px;
     }
   }
 }
@@ -53,8 +53,23 @@
     .navbar-link-element.active {
       color: #ffffff !important;
       background-color: $button_color;
-      border-radius: 17px;
+      border-radius: 20px;
     }
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .navbar-branch-element {
+    width: 300px;
+    height: 65px;
+    margin-left: 150px !important;
+  }
+
+  .navbar-collapse-element {
+    font-family: $font_Open_Sans;
+    font-weight: 700;
+    font-size: 16px;
+    padding-right: 125px !important;
   }
 }
 
