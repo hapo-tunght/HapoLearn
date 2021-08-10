@@ -2,20 +2,24 @@
 
 .header {
   height: 150px;
+
   .navbar-element {
     background-color: #ffffff !important;
     margin: 0;
     padding: 0;
     align-items: center;
+
     .navbar-branch-element {
       width: 340.16px;
       height: 70px;
       margin-left: 8.96%;
     }
+
     .navbar-toggler-element {
       border: 0;
       outline: 0;
     }
+
     .navbar-collapse-element {
       font-family: $font_Open_Sans;
       font-weight: 700;
@@ -24,6 +28,7 @@
     }
   }
 }
+
 .navbar-nav {
   .nav-item {
     .navbar-link-element {
@@ -32,6 +37,7 @@
     }
   }
 }
+
 .navbar-collapse-element {
   .navbar-nav {
     .navbar-link-element:hover {
@@ -41,6 +47,7 @@
     }
   }
 }
+
 .navbar-nav {
   .nav-item.active {
     .navbar-link-element.active {
@@ -51,14 +58,16 @@
   }
 }
 
-@media only screen and(max-width: 769px) {
+@media screen and (max-width: 769px) {
   .header {
     height: 188px;
     position: relative;
     padding: 0;
+
     .navbar-element {
       background: $background_color_header_in_768px; 
     }
+
     .navbar-branch-element {
       margin-left: 0;
       position: absolute;
@@ -66,6 +75,7 @@
       left: 30.4%;
       top: 39px;
     }
+
     .navbar-collapse-element {
       margin-left: 0;
       position: absolute;
@@ -76,6 +86,7 @@
       font-size: 16px;
     }
   }
+
   .navbar-nav {
     .nav-item {
       .navbar-link-element {
@@ -86,14 +97,16 @@
   }   
 }
 
-@media only screen and(max-width: 575px) {
+@media screen and (max-width: 575px) {
   .header {
     height: 65px;
     position: relative;
+
     .navbar-element {
       height: 62px;
       background-color: #ffffff !important;
     }
+
     .navbar-element .navbar-branch-element {
       position: absolute;
       right: 30%;
@@ -101,6 +114,7 @@
       height: 35px;
       width: auto;
     }
+
     .navbar-collapse-element {
       background-color: #ffffff;
       padding-right: 0 !important;
@@ -108,12 +122,14 @@
       top: 62px;
       left: 0;
       right: 0;
+
       .navbar-link-element {
         text-align: center;
         font-size: 16px;
         line-height: 46px;
       }
     }
+
     .navbar-toggler-element {
       position: absolute;
       top: 0;
@@ -125,12 +141,11 @@
       padding: 0;
     }
   }
-  .navbar-nav {
+  
   .nav-item.active {
     .navbar-link-element.active {
       color: $button_color !important;
       background-color: #ffffff;
     }
-  }
-}
+  } 
 }
