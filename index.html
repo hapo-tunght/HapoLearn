@@ -15,43 +15,60 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- Tittle -->
     <title>HapoLearn</title>
+    <link href="./assets/img/hapo_logo.png" rel="shortcut icon" type="image/png" />
 </head>
+<body>
     <!-- HEADER -->
-    <header id="header" class="container-fluid position-relative p-0 header">
-        <nav class="navbar container-fluid navbar-expand-sm navbar-light bg-light sticky-top">
-            <div class="container-fluid">
+    <header id="header" class="container-fluid position-relative header">
+        <nav class="navbar container-fluid navbar-expand-sm h-100 navbar-light bg-light sticky-top navbar-element">
                 <a class="navbar-branch navbar-branch-element" href="#">
-                    <img src="./assets/img/hapo_Learn.png" alt="Logo">
+                    <img class="w-100 h-100" src="./assets/img/hapo_learn.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler navbar-toggler-element " type="button" data-toggle="collapse" 
                 data-target="#navbarReponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-collapse-element" id="navbarReponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">HOME</a>
+                <div class="collapse navbar-collapse col-xs-12 navbar-collapse-element" id="navbarReponsive">
+                    <ul class="navbar-nav w-100 h-100 d-flex justify-content-end">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link active navbar-link-element">HOME</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link navbar-link-element">ALL COURSES</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">ALL COURSES</a>
+                            <a href="#" class="nav-link navbar-link-element">LOGIN/REGISTER</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">LOGIN/REGISTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">PROFILE</a>
+                            <a href="#" class="nav-link navbar-link-element">PROFILE</a>
                         </li>
                     </ul>
                 </div>
-            </div>
         </nav>
     </header>
     <!-- CLOSE HEADER -->
 
     <!-- BODY -->
-    <div id="body" class="container-fluid bg-dark position-relative p-0 body">
-        Body
-        <div class="body-hapo-learn-banner"></div>
+    <div id="body" class="container-fluid bg-light position-relative p-0 body">
+        <div class="container-fluid bg-light p-0 hapo-learn-banner">
+            <div class="container-fluid p-0 hapo-learn-banner-image">
+                <img class="w-100 h-100" src="./assets/img/hapo_learn_banner_1.png" alt="hapo-learn-image">
+            </div>
+            <div class="container pl-lg-4 d-flex flex-column hapo-learn-banner-content">
+                <span class="d-block hapo-learn-banner-content-title">
+                    Learn Anytime, Anywhere
+                </span>
+                <span class="d-block hapo-learn-banner-content-bold">
+                    at HapoLearn <img src="./assets/img/hapo_logo.png" alt="hapo-logo"> !
+                </span>
+                <span class="d-block hapo-learn-banner-content-quote">
+                    Interactive lessons, "on-the-go" <br> practice, peer support.
+                </span>
+                <button class="btn d-block algin-middle" type="button">
+                    Start Learning Now! 
+                </button>
+            </div>           
+        </div>
         <div class="container chat-box"></div>
         <div class="container main-courses"></div>
         <div class="container other couses"> </div>
@@ -82,6 +99,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-    
+   
 </body>
 </html>
