@@ -6,7 +6,7 @@
   background-size: cover;
 
   &-content {
-    margin-left: 2.5%;
+    margin-left: 36px;
     font-family: $font_UTM_BryantLG;
     font-style: normal;
 
@@ -72,8 +72,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+
     &-content {
-      margin-left: 3%;
+      margin-left: 23px;
       font-family: $font_UTM_BryantLG;
       letter-spacing: -0.05em;
 
@@ -128,9 +129,11 @@
     width: 100%;
     background-position: -60px 0;
     display: block !important;
+    
     &-content {
       padding-top: 215px !important;
       margin-left: 65px;
+      
       &-title {
         font-size: 25px;
         font-weight: 400;
