@@ -1,0 +1,263 @@
+.other-courses {
+  margin-top: 100px;
+
+	&-title {
+		font-family: $font_UTM_BryantLG;
+		font-size: 80px;
+		font-weight: 800;
+		line-height: 98px;
+		letter-spacing: -2px;
+		color: $hapo_learn_button_text_hover;
+		-webkit-text-stroke-width: 2px;
+
+		&-underline {
+			width: 470px;
+			height: 6px;
+			background-color: $button_color;
+			border-radius: 3px;
+			margin-top: 15px;
+			margin-bottom: 70px;
+		}
+	}
+  
+  .view-all-our-courses {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: $view_all_our_courses_color;
+    font-family: $font_UTM_BryantLG;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1.5px;
+    cursor: pointer;
+    transition: transform .4s;
+
+    img {
+      margin-left: 20px;
+      vertical-align: middle;
+    }
+  }
+
+  .view-all-our-courses:hover {
+    transform: scale(1.2);
+  }
+}
+
+.other-courses-item {     
+  &-card {
+    @include main_courses_item_card ;
+  }
+}
+
+.other-courses-item-card {
+  .css-image {
+    background-color: $css_tutorial_background_color;
+    @include common_for_courses_image ;
+  }
+
+  .rails-image {
+    background-color: $rails_tutorial_background_color;
+    @include common_for_courses_image ;
+  }
+
+  .java-image {
+    background-color: $java_tutorial_background_color;
+    @include common_for_courses_image ;
+  }
+
+  .card-content-title {
+    @include card_content_title ;
+  }
+
+  .card-content-body {
+    @include card_content_body ;
+  }
+
+  .courses-button {
+    @include courses-button ;
+  }
+
+  .courses-button:hover {
+    color: $hapo_learn_button_text_hover !important;
+  }
+}
+
+ .card:hover {
+    transform: translateY(-15px);
+    transition: transform 0.3s;
+  }
+  
+@media screen and (max-width: 769px) {
+  .other-courses {
+    margin-top: 40px;
+
+    &-title {
+      height: 85px;
+      font-size: 50px;
+
+      &-underline {
+        width: 290px;
+        height: 4px;
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+    }
+
+    .view-all-our-courses {
+      font-size: 28px;
+      margin-top: 35px;
+
+      img {
+        width: 34px;
+        height: 19px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .other-courses-item {
+    height: 280px;
+
+    &-card {
+      margin: 0 5px;
+      width: 100%;
+
+      &-content {
+        padding: 0;
+      }
+
+      .css-image {
+        @include common_for_courses_image_media_769px ;
+      }
+
+      .rails-image {
+        @include common_for_courses_image_media_769px ;
+      }
+
+      .java-image {
+        @include common_for_courses_image_media_769px ;
+      }
+
+      .card-content-title {
+        font-size: 18px !important;
+        @include card_content_title_media_769px ;
+      }
+
+      .card-content-body {
+        line-height: 16px !important;
+        @include card_content_body_media_769px ;
+      }
+      
+      .courses-button {
+        @include courses-button_media_769px ;
+      }
+    }
+  }
+
+  .css-image {
+    img {
+      width: 158px;
+      height: 98px;
+    }
+  }
+
+  .rails-image {
+    img {
+      width: 171px;
+      height: 60px;
+    }
+  }
+
+  .java-image {
+    img {
+      width: 169px;
+      height: 105px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .other-courses {
+    margin-top: 20px;
+
+    &-title {
+      height: 85px;
+      font-size: 40px;
+
+      &-underline {
+        width: 230px;
+        height: 4px;
+        margin-bottom: 30px;
+        margin-top: 0;
+      }
+    }
+
+    .view-all-our-courses {
+      font-size: 24px;
+      margin-top: 25px;
+      -webkit-text-stroke-width: 0.5px;
+
+      img {
+        width: 31px;
+        height: 16px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .other-courses-item {
+    height: 389px;
+    margin: 15px 0px;
+
+    &-card {
+      @include main_courses_item_card_media_575px ;
+
+      .css-image {
+        @include common_for_courses_image_media_575px ;
+      }
+
+      .rails-image {
+        @include common_for_courses_image_media_575px ;
+      }
+
+      .java-image {
+        @include common_for_courses_image_media_575px ;
+      }
+
+      .card-content-title {
+        font-size: 20px !important;
+        @include card_content_title_media_575px ;
+      }
+
+      .card-content-body {
+        line-height: 20px !important;
+        @include card_content_body_media_575px ;
+      }
+      
+      .courses-button {
+        @include courses-button_media_575px ;
+      }
+    }
+  }
+
+  .css-image {
+    img {
+      width: 168px;
+      height: 104px;
+    }
+  }
+
+  .rails-image {
+    img {
+      width: 193px;
+      height: 68px;
+    }
+  }
+  
+  .java-image {
+    img {
+      width: 193px;
+      height: 119px;
+    }
+  }
+}

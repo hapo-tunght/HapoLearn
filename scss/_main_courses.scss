@@ -67,7 +67,7 @@
       }
 
       .card-content-title {
-        @include card_content_title_madia_769px ;
+        @include card_content_title_media_769px ;
       }
 
       .card-content-body {
@@ -93,6 +93,7 @@
       height: 76px;
     }
   }
+  
   .php-image {
     img {
       width: 150px;
@@ -122,7 +123,7 @@
       }
 
       .card-content-title {
-        @include card_content_title_madia_575px ;
+        @include card_content_title_media_575px ;
       }
 
       .card-content-body {
