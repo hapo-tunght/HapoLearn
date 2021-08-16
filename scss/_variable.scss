@@ -82,7 +82,7 @@ $button_box_shadow_color: #6F8710;
 }
 
 @mixin common_for_courses_image_media_769px {
-  height: 131px;
+  height: 151px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) ;
@@ -96,15 +96,14 @@ $button_box_shadow_color: #6F8710;
 }
 
 @mixin card_content_body_media_769px {
-  width: 198px;
-  height: 75px;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-size: 14px;
+  overflow: hidden;
   line-height: 18.75px;
   display: -webkit-box;
-  box-orient: vertical; 
-  -webkit-line-clamp: 4; 
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical; 
+  width: 198px;
+  height: 75px;
 }
 
 @mixin courses-button_media_769px {
