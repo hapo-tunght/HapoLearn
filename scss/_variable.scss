@@ -100,10 +100,13 @@ $button_box_shadow_color: #6F8710;
 @mixin card_content_body_media_769px {
   width: 198px;
   height: 75px;
-  font-size: 14px;
-  line-height: 18px;
-  margin: 5px 14px 0px 14px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 18.75px;
+  display: -webkit-box;
+  box-orient: vertical; 
+  -webkit-line-clamp: 4; 
 }
 
 @mixin courses-button_media_769px {
