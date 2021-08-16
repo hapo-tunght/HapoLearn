@@ -58,10 +58,16 @@
    }
 }
 
-.transition-block {
-  height: 130px;
-  background: linear-gradient(0deg, $hapo_learn_linear-gradient_color, $white_color);
+.linear-gradient {
+  height: 65px;
+  overflow: visible;
+
+  .transition-block {
+    height: 130px;
+    background: linear-gradient(0deg, $hapo_learn_linear-gradient_color, $white_color);
+  }
 }
+
 
 @media screen and (max-width: 769px) {
   .hapo-learn-banner {
@@ -121,6 +127,15 @@
       }
     }
   }
+
+  .linear-gradient {
+    height: 45px;
+    overflow: visible;
+
+    .transition-block {
+      background: $white_color;
+    }
+  } 
 }
 
 @media screen and (max-width: 415px) {
@@ -132,7 +147,7 @@
     
     &-content {
       padding-top: 215px !important;
-      margin-left: 65px;
+      margin-left: 75px;
       
       &-title {
         font-size: 25px;
@@ -150,14 +165,19 @@
       }
 
       .btn {
-        width: 255px;
+        width: 265px;
         height: 50px;
       }
     }
   }
 
-  .transition-block {
-    height: 280px;
-    background: linear-gradient(0deg, $hapo_learn_linear-gradient_color, $white_color);
-  }
+  .linear-gradient {
+    height: 230px;
+    overflow: visible;
+
+    .transition-block {
+      height: 310px;
+      background: linear-gradient(0deg, $hapo_learn_linear-gradient_color, $white_color);
+    }
+  }  
 }
