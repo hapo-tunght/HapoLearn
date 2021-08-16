@@ -5,7 +5,6 @@
 }
 
 .main-courses-item-card {
-
   .front-end-image {
     background-color: $background_color_front_end_image;
     @include common_for_courses_image ;
@@ -38,7 +37,7 @@
   }
 }
 
- .card:hover {
+  .card:hover {
     transform: translateY(-15px);
     transition: transform 0.3s;
   }
@@ -79,27 +78,6 @@
       }
     }
   }
-
-  .front-end-image {
-    img {
-      width: 152px;
-      height: 84.5px;
-    }
-  }
-
-  .laravel-image {
-    img {
-      width: 112px;
-      height: 76px;
-    }
-  }
-  
-  .php-image {
-    img {
-      width: 150px;
-      height: 83px;
-    }
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -133,26 +111,6 @@
       .courses-button {
         @include courses-button_media_575px ;
       }
-    }
-  }
-
-  .front-end-image {
-    img {
-      width: 171px;
-      height: 95px;
-    }
-  }
-
-  .laravel-image {
-    img {
-      width: 139px;
-      height: 94.5px;
-    }
-  }
-  .php-image {
-    img {
-      width: 174px;
-      height: 97px;
     }
   }
 }
