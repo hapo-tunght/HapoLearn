@@ -39,7 +39,6 @@ $view_all_our_courses_color: #90AB26;
   border-radius: 15px ;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) ;
   transition: transform 0.3s;
-
 }
 
 @mixin common_for_courses_image {
@@ -110,7 +109,7 @@ $view_all_our_courses_color: #90AB26;
   height: 75px;
 }
 
-@mixin courses-button_media_769px {
+@mixin courses_button_media_769px {
   height: 27.5px;
   width: 116.5px;
   font-size: 12px;
@@ -141,6 +140,9 @@ $view_all_our_courses_color: #90AB26;
   line-height: 20px;
   margin: 10px 16px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 @mixin courses-button_media_575px {

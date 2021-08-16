@@ -22,7 +22,6 @@
   
   .view-all-our-courses {
     margin-top: 50px;
-    margin-bottom: 30px;
     color: $view_all_our_courses_color;
     font-family: $font_UTM_BryantLG;
     font-size: 40px;
@@ -70,7 +69,15 @@
   }
 
   .card-content-body {
-    @include card_content_body ;
+    font-family: $font_UTM_BryantLG;
+    font-weight: bold;
+    font-size: 14.5px;
+    overflow: hidden;
+    line-height: 21px;
+    text-align: center;
+    width: 294px;
+    height: 42px;
+    letter-spacing: 0.5px;
   }
 
   .courses-button {
@@ -85,7 +92,7 @@
  .card:hover {
     transform: translateY(-15px);
     transition: transform 0.3s;
-  }
+}
   
 @media screen and (max-width: 769px) {
   .other-courses {
@@ -126,16 +133,13 @@
         padding: 0;
       }
 
-      .css-image {
+      .cover-image {
         @include common_for_courses_image_media_769px ;
       }
 
-      .rails-image {
-        @include common_for_courses_image_media_769px ;
-      }
-
-      .java-image {
-        @include common_for_courses_image_media_769px ;
+      .custom-image {
+        width: 70%;
+        height: auto;
       }
 
       .card-content-title {
@@ -144,34 +148,13 @@
       }
 
       .card-content-body {
-        line-height: 16px !important;
+        margin-top: 5px;
         @include card_content_body_media_769px ;
       }
       
       .courses-button {
-        @include courses-button_media_769px ;
+        @include courses_button_media_769px ;
       }
-    }
-  }
-
-  .css-image {
-    img {
-      width: 158px;
-      height: 98px;
-    }
-  }
-
-  .rails-image {
-    img {
-      width: 171px;
-      height: 60px;
-    }
-  }
-
-  .java-image {
-    img {
-      width: 169px;
-      height: 105px;
     }
   }
 }
@@ -212,15 +195,7 @@
     &-card {
       @include main_courses_item_card_media_575px ;
 
-      .css-image {
-        @include common_for_courses_image_media_575px ;
-      }
-
-      .rails-image {
-        @include common_for_courses_image_media_575px ;
-      }
-
-      .java-image {
+      .cover-image {
         @include common_for_courses_image_media_575px ;
       }
 
@@ -230,34 +205,12 @@
       }
 
       .card-content-body {
-        line-height: 20px !important;
         @include card_content_body_media_575px ;
       }
       
       .courses-button {
         @include courses-button_media_575px ;
       }
-    }
-  }
-
-  .css-image {
-    img {
-      width: 168px;
-      height: 104px;
-    }
-  }
-
-  .rails-image {
-    img {
-      width: 193px;
-      height: 68px;
-    }
-  }
-  
-  .java-image {
-    img {
-      width: 193px;
-      height: 119px;
     }
   }
 }
