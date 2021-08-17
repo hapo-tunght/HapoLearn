@@ -1,0 +1,163 @@
+.why-hpl-banner {
+  height: 740px;
+  margin-top: 110px;
+  background: url(/assets/img/rectangle_17.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: $font_UTM_BryantLG;
+
+  .why-hpl-text {
+    margin-top: 150px;
+
+    &-title {
+      color: $white_color;
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 86px;
+      text-align: center;
+      letter-spacing: -2px;
+      -webkit-text-stroke-width: 2px;
+      margin-bottom: 20px;
+    }
+
+    .text-content {
+      font-size: 20px;
+      color: $white_color;
+      line-height: 24.5px;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+  }
+
+    .fa-check-circle {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 7px;
+      align-items: center;
+    }  
+  }
+
+  .multi-device-image {
+    background-image: url(/assets/img/transparent_1911160_1280.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 783px;
+    height: 520px;
+  }
+
+  .single-device-image {
+    background-image: url(/assets/img/mb_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 478px;
+    height: 478px;
+    position: absolute;
+    left: 15px;
+    top: -200px;
+    transform: rotate(8deg);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .why-hpl-banner {
+    height: 395px;
+    margin-top: 80px;
+    position: relative;
+
+    .why-hpl-text {
+      margin-top: 10px;
+
+      &-title {        
+        font-size: 50px;
+        line-height: 61px;
+        position: relative;
+        left: 65%;
+        bottom: 30px;
+      }
+
+      .text-content {
+        height: 25px;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        overflow: hidden;
+      }
+
+      .fa-check-circle {
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 5px;
+        align-items: center;
+      }  
+    }
+
+    .multi-device-image {
+      width: 378px;
+      height: 259px;
+      margin-top: 120px;  
+    }
+
+    .single-device-image {
+      width: 277px;
+      height: 277px;
+      position: absolute;
+      left: 15px;
+      top: -100px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .why-hpl-banner {
+    height: 570px;
+    width: 100%;
+    margin-top: 90px;
+    position: relative;
+
+    .why-hpl-text {
+      margin-top: 50px;
+
+      &-title { 
+        width: 228px;
+        height: 100px;       
+        font-size: 40px;
+        line-height: 40px;
+        text-align: left;
+        position: relative;
+        left: 20%;
+        bottom: 20px;
+      }
+
+      .text-content {
+        font-size: 15px;
+        line-height: 24.5px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+      }
+
+      .fa-check-circle {
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 5px;
+        align-items: center;
+      }  
+    }
+
+    .multi-device-image {
+      width: 316px;
+      height: 218px;
+      margin-top: 0;
+      margin-left: 65px; 
+    }
+
+    .single-device-image {
+      width: 226px;
+      height: 226px;
+      position: absolute;
+      left: 10px;
+      top: -100px;
+    }
+  }
+}
