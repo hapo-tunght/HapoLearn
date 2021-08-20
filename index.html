@@ -10,6 +10,10 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -201,7 +205,111 @@
             <div class="single-device-image"></div>
 
         </div>
-        <div class="container feedback-slider"></div>
+        <div class="feedback-slider container">
+            <div class="feedback-slider-title d-flex justify-content-center">Feedback</div>
+            <div class="feedback-slider-underline mx-auto"></div>
+            <div class="feedback-slider-content d-flex justify-content-center">
+                <p>What other students turned professionals have to say about us after learning with us and reaching their goals</p>
+            </div>
+            <div class="feedback-slider-comment d-flex">
+                <div class="slide-feedback">
+                    <div class="slide-feedback-comment">
+                        <div class="comment-text">
+                            <p>“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular
+                                developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                        </div>
+                    </div>
+                    <div class="slide-feedback-user d-flex">
+                        <div class="user-avatar d-flex align-items-center">
+                            <img src="./assets/img/info_avavtar.png" alt="avatar">
+                        </div>  
+                        <div class="user-info d-flex flex-column">
+                            <div class="user-info-name">Thanh Tung Hoang</div>
+                            <div class="user-info-lang">PHP</div>
+                            <div class="user-info-vote">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>   
+                        </div>                     
+                    </div>
+                </div>
+                <div class="slide-feedback">
+                    <div class="slide-feedback-comment">
+                        <div class="comment-text">
+                            <p>“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular
+                                developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                        </div>                       
+                    </div>
+                    <div class="slide-feedback-user d-flex">
+                        <div class="user-avatar d-flex align-items-center">
+                            <img src="./assets/img/info_avavtar.png" alt="avatar">
+                        </div>
+                        <div class="user-info d-flex flex-column">
+                            <div class="user-info-name">Anh Hoang Nguyen</div>
+                            <div class="user-info-lang">Java</div>
+                            <div class="user-info-vote">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-feedback">
+                    <div class="slide-feedback-comment">
+                        <div class="comment-text">
+                            <p>“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular
+                                developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                        </div>
+                    </div>
+                    <div class="slide-feedback-user d-flex">
+                        <div class="user-avatar d-flex align-items-center">
+                            <img src="./assets/img/info_avavtar.png" alt="avatar">
+                        </div>
+                        <div class="user-info d-flex flex-column">
+                            <div class="user-info-name">Nghia Luu Trung</div>
+                            <div class="user-info-lang">PHP</div>
+                            <div class="user-info-vote">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-feedback">
+                    <div class="slide-feedback-comment">
+                        <div class="comment-text">
+                            <p>“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular
+                                developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                        </div>
+                    </div>
+                    <div class="slide-feedback-user d-flex">
+                        <div class="user-avatar d-flex align-items-center">
+                            <img src="./assets/img/info_avavtar.png" alt="avatar">
+                        </div>
+                        <div class="user-info d-flex flex-column">
+                            <div class="user-info-name">Tuan Tran Hoang</div>
+                            <div class="user-info-lang">Python</div>
+                            <div class="user-info-vote">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid become-a-memmber"></div>
         <div class="container-fluid statistic"></div>
         <div class="container chat-box"></div>
@@ -217,17 +325,22 @@
     <!-- CLOSE FOOTER -->
 
     <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Javascript -->
+    <script text="text/javascript" src="./js/style.js"></script>
    
 </body>
 </html>
