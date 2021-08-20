@@ -4,7 +4,7 @@ $('.feedback-slider-comment').slick({
   speed: 300,
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   speed: 1000,
   prevArrow: '<button class="slick-arrow prev-arrow"><i class="fas fa-chevron-circle-left"></i></button>',
   nextArrow: '<button class="slick-arrow next-arrow"><i class="fas fa-chevron-circle-right"></i></button>',

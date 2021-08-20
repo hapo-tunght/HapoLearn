@@ -44,49 +44,54 @@
     font-family: $font_UTM_BryantLG;
 
     &-comment {
-      padding: 35px 20px;
+      padding: 0;
       background: $white_color;
       border: 0.5px solid $scroll_color;
       box-sizing: border-box;
       border-radius: 10px;
       box-shadow: $box_shadow_comment;
+      position: relative;
     }
 
-    .comment-arrow::before {
+    &-comment::before {
       content: '';
-      width: 0px; 
-      height: 0px; 
-      display: block;
-      border-color: $black_color;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;    
-      border-top: 14px solid $black_color;    
+      width: 20px; 
+      height: 20px;
+      background-color: $white_color; 
+      border-radius: 2px;
+      box-shadow: $box_shadow_comment;
+      border-bottom: 0.5px solid $scroll_color;
+      border-right: 0.5px solid $scroll_color;    
+      transform: rotate(45deg);    
       position: absolute;
-      top: 161px;
+      bottom: -8px;
+      left: 20px;
+      z-index: 1;
     }
 
-    .comment-arrow::after {
+    &-comment::after {
       content: '';
-      width: 0px; 
-      height: 0px; 
-      display: block;
-      border-color: $black_color;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;    
-      border-top: 14px solid $white_color;
+      width: 30px; 
+      height: 30px;
+      background-color: $white_color;           
       position: absolute;
-      top: 160.5px;
-      z-index: 2;      
+      bottom: -0px;
+      left: 15px;
+      z-index: 2;
+    }
+
+    .comment-text {
+      padding: 35px 10px 35px 35px;
     }
 
     &-comment p {
-      padding: 15px 0 15px 15px;
       color: $black_color;
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
       letter-spacing: -0.5px;
       border-left: 5px solid $gray_color;
+      padding: 10px 15px;
     }
 
     &-user {
@@ -187,12 +192,12 @@
     .slide-feedback {
       padding: 0 10px;
 
-      &-comment {
-        padding: 15px 20px;
+      .comment-text {
+        padding: 25px 10px 25px 25px;
       }
 
       &-comment p {
-        padding: 10px 0 10px 15px;
+        padding-left: 15px;
         font-size: 14px;
         line-height: 17px;
       }
@@ -222,14 +227,6 @@
       .fas {
         font-size: 18px;
       }
-    }
-
-    .comment-arrow::before {
-      top: 136px !important;
-    }
-
-    .comment-arrow::after {
-      top: 135.5px !important;     
     }
   }
 }
