@@ -1,0 +1,188 @@
+.footer {
+  margin-top: 135px;
+  font-family: $font_UTM_BryantLG;
+
+  &-content {
+    height: 258px;
+    background-color: $text_navbar_color;
+
+    .brand-logo {
+      margin-bottom: 45px;
+    } 
+
+    .brand-logo-img {
+      height: 60px;
+      width: 292px;
+      background-image: url(/assets/img/hapo_Learn_white_1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;     
+    }
+
+    .brand-logo-quote p {
+      width: 250px;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -1px;
+      color: $white_color;
+      margin-left: 90px;
+    }
+
+    .first-column {
+      padding-right: 50px ;
+    }
+
+    .second-column {
+      padding-left: 50px;
+    }
+
+    .item-link {
+      color: $white_color;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.05em; 
+      padding: 10px 0;
+    }
+
+    .item-link {
+      transition: transform .4s;
+    }
+
+    .item-link:hover {
+      transform: scale(1.2);
+    }
+
+    .contact-us-items a {
+      padding: 0 15px;
+    }  
+  }
+
+  &-copyright {
+    height: 35px;
+    background-color: $copyright_background_color;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    color: $white_color;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 60px;
+
+    &-content {
+      height: 218px;
+
+      .brand-logo {
+        margin-bottom: 95px;
+      }
+
+      .brand-logo-cover {
+        padding-left: 25px !important;
+        align-items: flex-start !important;
+      }
+
+      .brand-logo-img {
+        height: 35px;
+        width: 170px; 
+      }
+
+      .brand-logo-quote p {
+        width: 200px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -1px;
+        margin-left: 0px !important;
+      }
+
+      .first-column {
+        margin-top: 0px !important;
+        padding-right: 20px ;
+        padding-left: 20px;
+      }
+
+      .second-column {
+        margin-top: 0px !important;
+        padding-left: 20px;
+      }
+
+      .item-link {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      .contact-us-items a {
+        padding: 0 10px;
+      }  
+
+      .contact-us-items img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    margin-top: 50px;
+
+    &-content {
+      height: 360px;
+      position: relative;
+
+      .brand-logo {
+        position: absolute;
+        left: 36px;
+        bottom: 45px;
+        margin: 0;
+      }
+
+      .brand-logo-cover {
+        padding-left: 0px !important;
+        align-items: flex-start !important;
+      }
+
+      .brand-logo-img {
+        height: 31px;
+        width: 150px;
+        margin-bottom: 5px; 
+      }
+
+      .brand-logo-quote p {
+        width: 175px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .first-column {
+        padding-left: 0px;
+        padding-right: 60px;
+      }
+
+      .second-column {
+        padding-left: 90px;
+      }
+
+      .contact-us-items {
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+      }
+
+      .contact-us-items a {
+        padding: 0px 6px;
+      }
+      
+      .contact-us-items img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
