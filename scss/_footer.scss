@@ -13,10 +13,9 @@
     .brand-logo-img {
       height: 60px;
       width: 292px;
-      background-image: url(/assets/img/hapo_Learn_white_1.png);
+      background-image: url(/assets/img/hapo_learn_white_1.png);
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;     
+      background-size: cover;    
     }
 
     .brand-logo-quote p {
@@ -54,10 +53,27 @@
     .item-link:hover {
       transform: scale(1.2);
     }
+    
+    .contact-icon {
+      width: 50px ;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 10px 15px 0px 15px;
+    }
 
-    .contact-us-items a {
-      padding: 0 15px;
-    }  
+    .contact-facebook {
+      background-image: url(/assets/img/fb_icon.png);    
+      margin-left: 50px;
+    }
+
+    .contact-phone {
+      background-image: url(/assets/img/phone_icon.png);
+    }
+
+    .contact-email {
+      background-image: url(/assets/img/email_icon.png);
+    }
   }
 
   &-copyright {
@@ -83,7 +99,7 @@
       }
 
       .brand-logo-cover {
-        padding-left: 25px !important;
+        margin-left: 25px;
         align-items: flex-start !important;
       }
 
@@ -116,13 +132,14 @@
         line-height: 22px;
       }
 
-      .contact-us-items a {
-        padding: 0 10px;
-      }  
-
-      .contact-us-items img {
-        width: 40px;
+      .contact-icon {
+        width: 40px ;
         height: 40px;
+        margin: 10px 10px 0px 10px;
+      }
+
+      .contact-facebook {
+        margin-left: 40px;     
       }
     }
   }
@@ -145,6 +162,7 @@
 
       .brand-logo-cover {
         padding-left: 0px !important;
+        margin-left: 20px;
         align-items: flex-start !important;
       }
 
@@ -162,26 +180,21 @@
 
       .first-column {
         padding-left: 0px;
-        padding-right: 60px;
+        padding-right: 50px;
       }
 
       .second-column {
-        padding-left: 90px;
-      }
-
-      .contact-us-items {
-        position: absolute;
-        bottom: 25px;
-        right: 30px;
-      }
-
-      .contact-us-items a {
-        padding: 0px 6px;
+        padding-left: 65px;
       }
       
-      .contact-us-items img {
-        width: 30px;
+      .contact-icon {
+        width: 30px ;
         height: 30px;
+        margin-bottom: 60px;
+      }
+
+      .contact-facebook {
+        margin-left: 250px;        
       }
     }
   }
