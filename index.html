@@ -41,7 +41,7 @@
                         <a href="#" class="nav-link navbar-link-element">ALL COURSES</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link navbar-link-element">LOGIN/REGISTER</a>
+                        <a href="#" class="nav-link navbar-link-element" data-toggle="modal" data-target="#myModal">LOGIN/REGISTER</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link navbar-link-element">PROFILE</a>
@@ -53,8 +53,8 @@
     <!-- CLOSE HEADER -->
 
     <!-- BODY -->
-    <!-- HapoLearn banner -->
     <div id="body" class="body container-fluid position-relative p-0">
+        <!-- HapoLearn banner -->
         <div class="hapo-learn-banner container-fluid d-flex align-items-center">         
             <div class="hapo-learn-banner-content container pl-lg-4 d-flex flex-column p-0">
                 <span class="hapo-learn-banner-content-title d-block">
@@ -344,6 +344,42 @@
                 </div>
             </div>
         </div>
+
+        <!-- Login/Register form -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+        
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#home">LOGIN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#menu1">REGISTER</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="tab-pane">
+                        <div id="home" class="container tab-pane active">
+                        </div>
+                        <div id="menu1" class="container tab-pane fade">
+                        </div>
+                    </div>
+        
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>       
+                </div>
+            </div>
+        </div>
+
+
         <div class="chat-box container"></div>
     </div>
     <!-- CLOSE BODY -->
