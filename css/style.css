@@ -738,7 +738,7 @@
 .why-hpl-banner {
   height: 740px;
   margin-top: 110px;
-  background: url(/assets/img/why_hpl_background.png);
+  background: url(../assets/img/why_hpl_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -777,7 +777,7 @@
 }
 
 .why-hpl-banner .multi-device-image {
-  background-image: url(/assets/img/multi_device.png);
+  background-image: url(../assets/img/multi_device.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 783px;
@@ -785,7 +785,7 @@
 }
 
 .why-hpl-banner .single-device-image {
-  background-image: url(/assets/img/single_laptop.png);
+  background-image: url(../assets/img/single_laptop.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 478px;
@@ -1105,7 +1105,7 @@
   width: 100%;
   height: 500px;
   margin-top: 110px;
-  background-image: url(/assets/img/become_a_member.png);
+  background-image: url(../assets/img/become_a_member.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "utm_bryantlgregular";
@@ -1312,10 +1312,9 @@
 .footer-content .brand-logo-img {
   height: 60px;
   width: 292px;
-  background-image: url(/assets/img/hapo_Learn_white_1.png);
+  background-image: url(../assets/img/hapo_learn_white_1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .footer-content .brand-logo-quote p {
@@ -1354,8 +1353,25 @@
   transform: scale(1.2);
 }
 
-.footer-content .contact-us-items a {
-  padding: 0 15px;
+.footer-content .contact-icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px 15px 0px 15px;
+}
+
+.footer-content .contact-facebook {
+  background-image: url(../assets/img/fb_icon.png);
+  margin-left: 50px;
+}
+
+.footer-content .contact-phone {
+  background-image: url(../assets/img/phone_icon.png);
+}
+
+.footer-content .contact-email {
+  background-image: url(../assets/img/email_icon.png);
 }
 
 .footer-copyright {
@@ -1379,7 +1395,7 @@
     margin-bottom: 95px;
   }
   .footer-content .brand-logo-cover {
-    padding-left: 25px !important;
+    margin-left: 25px;
     align-items: flex-start !important;
   }
   .footer-content .brand-logo-img {
@@ -1406,12 +1422,13 @@
     font-size: 18px;
     line-height: 22px;
   }
-  .footer-content .contact-us-items a {
-    padding: 0 10px;
-  }
-  .footer-content .contact-us-items img {
+  .footer-content .contact-icon {
     width: 40px;
     height: 40px;
+    margin: 10px 10px 0px 10px;
+  }
+  .footer-content .contact-facebook {
+    margin-left: 40px;
   }
 }
 
@@ -1431,6 +1448,7 @@
   }
   .footer-content .brand-logo-cover {
     padding-left: 0px !important;
+    margin-left: 20px;
     align-items: flex-start !important;
   }
   .footer-content .brand-logo-img {
@@ -1445,22 +1463,18 @@
   }
   .footer-content .first-column {
     padding-left: 0px;
-    padding-right: 60px;
+    padding-right: 50px;
   }
   .footer-content .second-column {
-    padding-left: 90px;
+    padding-left: 65px;
   }
-  .footer-content .contact-us-items {
-    position: absolute;
-    bottom: 25px;
-    right: 30px;
-  }
-  .footer-content .contact-us-items a {
-    padding: 0px 6px;
-  }
-  .footer-content .contact-us-items img {
+  .footer-content .contact-icon {
     width: 30px;
     height: 30px;
+    margin-bottom: 60px;
+  }
+  .footer-content .contact-facebook {
+    margin-left: 250px;
   }
 }
 
