@@ -34,6 +34,10 @@ $(document).ready(function () {
       }
     ]
   });
-  
+ 
   $('[data-toggle="popover"]').popover();
+
+  $(".nav-tabs a").click(function () {
+    $(this).tab('show');
+  });
 });

@@ -1,0 +1,254 @@
+.login-register-form {
+  font-family: $font_UTM_BryantLG;
+
+  .modal-title {
+    position: relative;
+
+    .close-tab {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      border: 0;
+      background-color: $button_color;
+    }
+
+    .fa-times {
+      color: $white_color;
+      font-size: 22px;
+    }
+  }
+
+  .nav-link {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: normal;
+    color: $button_color;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+  .nav-item {
+    background: $white_color;
+  }
+
+  .nav-item .active {
+    background: $button_color;
+    color: $white_color;
+  }
+
+  .login-username {
+    margin-top: 40px !important;
+  }
+
+  .form-group {
+    margin: 25px 15px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 0.8;
+    margin-bottom: 6px;
+  }
+
+  .form-control {
+    height: 50px;
+    background-color: $input_color;
+  }
+
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+  }
+  
+
+  .text-right {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: $button_color;
+    opacity: 0.8;
+  }
+
+  .button-cover {
+    .btn {
+      width: 200px;
+      height: 42px;
+      font-size: 18px;
+      font-weight: bold;
+      background: $button_login_color;
+      color: $white_color;
+      border-radius: 22px;
+      transition: transform .4s;
+      margin-top: 35px;
+    }
+
+    .btn:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  .login-with {
+    .horizontal-rule {
+      width: 180px;
+    }
+    
+    p {
+      width: 110px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0.5px;
+      margin-bottom: 7px;
+    }
+  }
+
+  .login-with-account {
+    a {
+      width: 370px;
+      height: 55px;
+      color: $white_color;
+      font-size: 20px;
+    }
+
+    &-google {
+      background: $google_account_color;
+    }
+
+    &-google:hover {
+      opacity: 0.8;
+    }
+
+    &-facebook {
+      background: $facebook_account_color;
+    }
+
+    &-facebook:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .register-form {
+    .form-group {
+      margin: 35px 15px;
+    }
+
+    .register-username {
+      margin-top: 45px;
+    }
+
+    .button-cover {
+      margin-top: 20px;
+      margin-bottom: 45px;
+    }
+
+    .button-register {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-content-custom {
+    width: 90%;
+    margin-left: 20px;
+
+    .modal-title {
+      .close-tab {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+      }
+
+      .fa-times {
+        font-size: 20px;
+      }
+    }
+
+    .nav-link {
+      height: 55px;
+      font-size: 22px;
+      line-height: 25px;
+      -webkit-text-stroke-width: 1px;
+    }
+    
+    .login-username {
+      margin-top: 25px !important;
+    }
+
+    .form-group {
+      margin: 20px 15px;
+    }
+
+    .form-group label {
+      font-size: 16px;
+      line-height: 20px;
+      opacity: 0.8;
+      margin-bottom: 4px;
+    }
+
+    .form-control {
+      height: 45px;
+    }
+
+    .form-check-label p {
+      font-size: 16px;
+      margin-top: 3px;
+    }
+
+    .form-check-input {
+      width: 18px;
+      height: 18px;
+    }
+
+    .text-right {
+      font-size: 16px;
+    }
+
+    .login-with {
+      .horizontal-rule {
+        width: 120px;
+      }
+      
+      p {
+        width: 120px;
+        font-size: 18px;
+      }
+    }
+
+    .login-with-account {
+      a {
+        width: 270px;
+        height: 45px;
+        font-size: 20px;
+      }
+
+      &-facebook {
+        margin-bottom: 25px !important;
+      }
+    }
+
+    .register-form {
+      .form-group {
+        margin: 25px 15px;
+      }
+
+      .register-username {
+        margin-top: 35px;
+      }
+
+      .button-cover {
+        margin-top: 10px;
+      }
+    }
+  }
+}
