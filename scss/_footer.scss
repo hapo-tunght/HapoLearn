@@ -151,25 +151,26 @@
 
     &-content {
       height: 360px;
-      position: relative;
 
       .brand-logo {
-        position: absolute;
-        left: 36px;
-        bottom: 45px;
-        margin: 0;
+        margin-bottom: 30px;
+        align-items: center;
       }
 
       .brand-logo-cover {
-        padding-left: 0px !important;
+        padding: 0px !important;
         margin-left: 20px;
-        align-items: flex-start !important;
+        align-items: center !important;
       }
 
       .brand-logo-img {
         height: 31px;
         width: 150px;
         margin-bottom: 5px; 
+      }
+
+      .brand-logo-quote {
+        margin-left: 30px;
       }
 
       .brand-logo-quote p {
@@ -191,10 +192,6 @@
         width: 30px ;
         height: 30px;
         margin-bottom: 60px;
-      }
-
-      .contact-facebook {
-        margin-left: 250px;        
       }
     }
   }

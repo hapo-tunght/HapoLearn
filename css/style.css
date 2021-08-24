@@ -24,7 +24,7 @@
 .header .navbar-element .navbar-branch-element {
   width: 300px;
   height: 65px;
-  margin-left: 130px;
+  padding-left: 0;
 }
 
 .header .navbar-element .navbar-toggler-element {
@@ -36,7 +36,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  padding-right: 105px;
+  padding-right: 0;
 }
 
 .navbar-nav .nav-item .navbar-link-element {
@@ -71,30 +71,39 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .header {
     height: 188px;
     position: relative;
     padding: 0;
   }
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .header .navbar-element {
     background: #fefbfb;
   }
   .header .navbar-branch-element {
-    margin-left: 0;
-    position: absolute;
-    margin-left: 0 !important;
-    left: 30.4%;
-    top: 39px;
+    padding-right: 0;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+  .header .navbar-branch-element img {
+    height: 61px;
   }
   .header .navbar-collapse-element {
-    margin-left: 0;
-    position: absolute;
-    left: 15%;
-    top: 127px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
+    flex: 1;
+    padding: 0;
+  }
+  .header .navbar-collapse-element ul {
+    display: flex;
+    justify-content: center !important;
   }
   .navbar-nav .nav-item .navbar-link-element {
     color: #505353;
@@ -111,40 +120,39 @@
     height: 62px;
     background-color: #ffffff !important;
   }
-  .header .navbar-element .navbar-branch-element {
-    position: absolute;
-    right: 30%;
-    top: 28.6%;
-    height: 35px;
-    width: auto;
+  .header .container {
+    flex-direction: row-reverse;
+  }
+  .header .navbar-branch-element {
+    flex: 11;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+  }
+  .header .navbar-branch-element img {
+    height: 30px;
+    width: 150px !important;
+  }
+  .header .navbar-toggler-element {
+    flex: 1;
   }
   .header .navbar-collapse-element {
     position: absolute;
     left: 0%;
-    top: 65px;
+    top: 80px;
     width: 100%;
-    margin-left: 0;
-    height: 100vh;
-    padding-left: 0;
     background: white;
-    padding-right: 0 !important;
+    padding: 0 !important;
   }
   .header .navbar-collapse-element .navbar-link-element {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 46px;
   }
-  .header .navbar-toggler-element {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 18px;
-    height: 23px;
-    margin-top: 20px;
-    margin-left: 5.07%;
-    padding: 0;
+  .header .fas {
+    font-size: 26px;
   }
-  .navbar-light .nav-item .nav-link.active {
+  .header .nav-item .nav-link.active {
     color: #B2D235 !important;
     background-color: #ffffff;
   }
@@ -263,7 +271,7 @@
   }
   .hapo-learn-banner-content .btn {
     width: 200px;
-    height: 50px;
+    height: 40px;
     font-size: 16px;
     line-height: 36px;
     font-weight: bold;
@@ -280,20 +288,26 @@
   }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 575px) {
   .hapo-learn-banner {
     height: 215px;
     width: 100%;
     background-position: -60px 0;
-    display: block !important;
+    position: relative;
+    justify-content: center;
   }
   .hapo-learn-banner-content {
-    padding-top: 215px !important;
-    margin-left: 75px;
+    width: 65%;
+    position: absolute;
+    bottom: -200px;
+    margin: 0;
+    padding: 0 20px;
+    white-space: nowrap;
   }
   .hapo-learn-banner-content-title {
     font-size: 25px;
     font-weight: 400;
+    letter-spacing: -1px;
   }
   .hapo-learn-banner-content-bold {
     font-size: 25px;
@@ -1442,23 +1456,23 @@
   }
   .footer-content {
     height: 360px;
-    position: relative;
   }
   .footer-content .brand-logo {
-    position: absolute;
-    left: 36px;
-    bottom: 45px;
-    margin: 0;
+    margin-bottom: 30px;
+    align-items: center;
   }
   .footer-content .brand-logo-cover {
-    padding-left: 0px !important;
+    padding: 0px !important;
     margin-left: 20px;
-    align-items: flex-start !important;
+    align-items: center !important;
   }
   .footer-content .brand-logo-img {
     height: 31px;
     width: 150px;
     margin-bottom: 5px;
+  }
+  .footer-content .brand-logo-quote {
+    margin-left: 30px;
   }
   .footer-content .brand-logo-quote p {
     width: 175px;
@@ -1476,9 +1490,6 @@
     width: 30px;
     height: 30px;
     margin-bottom: 60px;
-  }
-  .footer-content .contact-facebook {
-    margin-left: 250px;
   }
 }
 
@@ -1633,7 +1644,7 @@
 
 @media screen and (max-width: 575px) {
   .modal-content-custom {
-    width: 90%;
+    width: 360px;
     margin-left: 20px;
   }
   .modal-content-custom .modal-title .close-tab {
@@ -1644,7 +1655,7 @@
     right: -12px;
   }
   .modal-content-custom .modal-title .fa-times {
-    font-size: 20px;
+    font-size: 18px;
   }
   .modal-content-custom .nav-link {
     height: 55px;

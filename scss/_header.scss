@@ -10,7 +10,7 @@
     .navbar-branch-element {
       width: 300px;
       height: 65px;
-      margin-left: 130px;
+      padding-left: 0;
     }
 
     .navbar-toggler-element {
@@ -22,7 +22,7 @@
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
-      padding-right: 105px;
+      padding-right: 0;
     }
   }
 }
@@ -72,32 +72,44 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .header {
     height: 188px;
     position: relative;
     padding: 0;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .navbar-element {
       background: $background_color_header_in_768px; 
     }
 
     .navbar-branch-element {
-      margin-left: 0;
-      position: absolute;
-      margin-left: 0 !important;
-      left: 30.4%;
-      top: 39px;
+      padding-right: 0;
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+
+      img {
+        height: 61px ;
+      }
     }
 
     .navbar-collapse-element {
-      margin-left: 0;
-      position: absolute;
-      left: 15%;
-      top: 127px;
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
+      flex: 1;
+      padding: 0;
+      
+      ul {
+        display: flex;
+        justify-content: center !important;
+      }
     }
   }
 
@@ -121,51 +133,51 @@
       background-color: #ffffff !important;
     }
 
-    .navbar-element .navbar-branch-element {
-      position: absolute;
-      right: 30%;
-      top: 28.6% ;
-      height: 35px;
-      width: auto;
+    .container {
+      flex-direction: row-reverse;
+    }
+
+    .navbar-branch-element {
+      flex: 11;
+      align-items: center;
+      justify-content: center;
+      padding-right: 30px;
+
+      img {
+        height: 30px;
+        width: 150px !important;
+      }
+    }
+
+    .navbar-toggler-element {
+      flex: 1;
     }
 
     .navbar-collapse-element {
       position: absolute;
       left: 0%;
-      top: 65px;
+      top: 80px;
       width: 100%;
-      margin-left: 0;
-      height: 100vh;
-      padding-left: 0;
       background: white;
-      padding-right: 0 !important;
-
+      padding: 0 !important;
 
       .navbar-link-element {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 46px;
       }
     }
 
-    .navbar-toggler-element {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 18px;
-      height: 23px;
-      margin-top: 20px;
-      margin-left: 5.07%;
-      padding: 0;
-    }
+
+  .fas {
+    font-size: 26px;
   }
   
-  .navbar-light {
     .nav-item {
       .nav-link.active {
         color: $button_color !important;
         background-color: #ffffff;
       }
     } 
-  } 
+  }
 }
