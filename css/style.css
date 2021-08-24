@@ -42,18 +42,19 @@
 .navbar-nav .nav-item .navbar-link-element {
   color: #505353;
   padding: 8px 25px;
+  white-space: nowrap;
 }
 
-.navbar-collapse-element .navbar-nav .navbar-link-element:hover {
+.navbar-light .navbar-nav .nav-link:hover {
   color: #ffffff;
   background-color: #B2D235;
   border-radius: 17px;
 }
 
-.navbar-nav .nav-item.active .navbar-link-element.active {
+.navbar-light .navbar-nav .nav-link.active {
   color: #ffffff !important;
   background-color: #B2D235;
-  border-radius: 20px;
+  border-radius: 17px;
 }
 
 @media screen and (min-width: 1640px) {
@@ -118,12 +119,15 @@
     width: auto;
   }
   .header .navbar-collapse-element {
-    background-color: #ffffff;
+    position: absolute;
+    left: 0%;
+    top: 65px;
+    width: 100%;
+    margin-left: 0;
+    height: 100vh;
+    padding-left: 0;
+    background: white;
     padding-right: 0 !important;
-    position: fixed;
-    top: 62px;
-    left: 0;
-    right: 0;
   }
   .header .navbar-collapse-element .navbar-link-element {
     text-align: center;
@@ -140,7 +144,7 @@
     margin-left: 5.07%;
     padding: 0;
   }
-  .nav-item.active .navbar-link-element.active {
+  .navbar-light .nav-item .nav-link.active {
     color: #B2D235 !important;
     background-color: #ffffff;
   }
@@ -1503,6 +1507,7 @@
 
 .login-register-form .nav-link {
   height: 65px;
+  border: 0;
   display: flex;
   justify-content: center;
   align-items: center;

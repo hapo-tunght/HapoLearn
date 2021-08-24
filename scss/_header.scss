@@ -32,26 +32,27 @@
     .navbar-link-element {
       color: $text_navbar_color;
       padding: 8px 25px;
+      white-space: nowrap;
     }
   }
 }
 
-.navbar-collapse-element {
+.navbar-light {
   .navbar-nav {
-    .navbar-link-element:hover {
-      color: #ffffff ;
+    .nav-link:hover {
+      color: $white_color;
       background-color: $button_color;
       border-radius: 17px;
     }
   }
 }
 
-.navbar-nav {
-  .nav-item.active {
-    .navbar-link-element.active {
-      color: #ffffff !important;
+.navbar-light {
+  .navbar-nav {
+    .nav-link.active {
+      color: $white_color !important;
       background-color: $button_color;
-      border-radius: 20px;
+      border-radius: 17px;
     }
   }
 }
@@ -129,12 +130,16 @@
     }
 
     .navbar-collapse-element {
-      background-color: #ffffff;
+      position: absolute;
+      left: 0%;
+      top: 65px;
+      width: 100%;
+      margin-left: 0;
+      height: 100vh;
+      padding-left: 0;
+      background: white;
       padding-right: 0 !important;
-      position: fixed;
-      top: 62px;
-      left: 0;
-      right: 0;
+
 
       .navbar-link-element {
         text-align: center;
@@ -155,10 +160,12 @@
     }
   }
   
-  .nav-item.active {
-    .navbar-link-element.active {
-      color: $button_color !important;
-      background-color: #ffffff;
-    }
+  .navbar-light {
+    .nav-item {
+      .nav-link.active {
+        color: $button_color !important;
+        background-color: #ffffff;
+      }
+    } 
   } 
 }
