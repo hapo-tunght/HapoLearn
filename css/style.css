@@ -139,10 +139,13 @@
   .header .navbar-collapse-element {
     position: absolute;
     left: 0%;
-    top: 80px;
+    top: 65px;
     width: 100%;
     background: white;
     padding: 0 !important;
+  }
+  .header .navbar-collapse-element .navbar-nav {
+    margin-top: 20px;
   }
   .header .navbar-collapse-element .navbar-link-element {
     text-align: center;
@@ -1691,6 +1694,9 @@
   }
   .modal-content-custom .form-control {
     height: 45px;
+  }
+  .modal-content-custom .form-check {
+    height: 27px;
   }
   .modal-content-custom .form-check-label p {
     font-size: 16px;

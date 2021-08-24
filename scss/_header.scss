@@ -156,10 +156,14 @@
     .navbar-collapse-element {
       position: absolute;
       left: 0%;
-      top: 80px;
+      top: 65px;
       width: 100%;
       background: white;
       padding: 0 !important;
+
+      .navbar-nav {
+        margin-top: 20px;
+      }
 
       .navbar-link-element {
         text-align: center;
