@@ -292,7 +292,6 @@
   .hapo-learn-banner {
     height: 215px;
     width: 100%;
-    background-position: -60px 0;
     position: relative;
     justify-content: center;
   }
@@ -328,6 +327,12 @@
   .linear-gradient .transition-block {
     height: 310px;
     background: linear-gradient(0deg, #ece5e5, #ffffff);
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .hapo-learn-banner {
+    background-position: -60px 0;
   }
 }
 
@@ -1265,7 +1270,6 @@
   .become-a-member {
     height: 181px;
     margin-top: 40px;
-    background-position: -55px;
   }
   .become-a-member-content p {
     width: 290px;
@@ -1310,6 +1314,12 @@
   }
   .statistic .specific-statistic .item-number {
     line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .become-a-member {
+    background-position: -55px;
   }
 }
 
@@ -1643,9 +1653,13 @@
 }
 
 @media screen and (max-width: 575px) {
+  .modal-dialog-centered {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+  }
   .modal-content-custom {
-    width: 360px;
-    margin-left: 20px;
+    width: 93%;
   }
   .modal-content-custom .modal-title .close-tab {
     width: 25px;
@@ -1712,6 +1726,27 @@
   }
   .modal-content-custom .register-form .button-cover {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-check {
+    align-items: flex-start !important;
+  }
+  .form-check .form-check-input {
+    width: 14px;
+    height: 14px;
+  }
+  .form-check .font-weight-bold {
+    margin-top: 2px !important;
+    margin-left: 0 !important;
+    font-size: 15px !important;
+    letter-spacing: -0.5px;
+  }
+  .form-check a {
+    text-align: center !important;
+    font-size: 15px;
+    white-space: nowrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

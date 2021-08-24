@@ -142,7 +142,6 @@
   .hapo-learn-banner {
     height: 215px;
     width: 100%;
-    background-position: -60px 0;
     position: relative;
     justify-content: center;
     
@@ -186,4 +185,10 @@
       background: linear-gradient(0deg, $hapo_learn_linear-gradient_color, $white_color);
     }
   }  
+}
+
+@media screen and (max-width: 415px) {
+  .hapo-learn-banner {
+    background-position: -60px 0;
+  }
 }
