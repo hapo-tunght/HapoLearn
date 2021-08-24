@@ -149,7 +149,7 @@
 .hapo-learn-banner {
   width: 100%;
   height: 655px;
-  background-image: url(../assets/img/hapo_learn_banner_1.png);
+  background-image: url(../assets/img/hapo_learn_banner_pc.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -221,7 +221,7 @@
     width: 100%;
     height: 350px;
     padding: 0;
-    background-image: url(../assets/img/hapo_learn_banner_1.png);
+    background-image: url(../assets/img/hapo_learn_banner_tablet.png);
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -1312,7 +1312,7 @@
 .footer-content .brand-logo-img {
   height: 60px;
   width: 292px;
-  background-image: url(../assets/img/hapo_learn_white_1.png);
+  background-image: url(../assets/img/hapo_learn_footer.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
