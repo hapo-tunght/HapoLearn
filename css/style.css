@@ -1572,6 +1572,10 @@
   background-color: #F2F2F2;
 }
 
+.login-register-form .font-weight-bold {
+  margin-bottom: 0;
+}
+
 .login-register-form .form-check-input {
   width: 18px;
   height: 18px;
