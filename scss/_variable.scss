@@ -37,9 +37,10 @@ $scroll_color: #E2E2E2;
 $box_shadow_button: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 $copyright_background_color: #454545;
 $input_color: #F2F2F2;
-$button_login_color: linear-gradient(90deg, #c9f02f, #82d326, #e5f31c);
+$button_login_box_shadow: inset 0px 1.5px 2px #6F8710;
 $google_account_color: #DC4E41;
 $facebook_account_color: #3B5999;
+$slick_arrow_color: #969494;
 
 .body {
 	background-color: $white_color ;
@@ -68,6 +69,9 @@ $facebook_account_color: #3B5999;
 	color: $button_color;
 	line-height: 36px;
 	letter-spacing: -0.5px;
+	white-space: nowrap;
+	width: inherit;
+	overflow: hidden;
 }
 
 @mixin card_content_body {
@@ -143,6 +147,14 @@ $facebook_account_color: #3B5999;
 	font-size: 20px;
 	margin: 18px 0 0 0;
 	letter-spacing: -5%;
+}
+
+@mixin main_courses_card_content_media_575px {
+	width: inherit;
+	height: auto;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 5px 16px;
 }
 
 @mixin card_content_body_media_575px {

@@ -5,12 +5,22 @@
     background-color: #ffffff !important;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: flex-end;
+
+    .navbar-cover {
+      display: flex;
+    }
 
     .navbar-branch-element {
-      width: 300px;
-      height: 65px;
-      padding-left: 0;
+      padding: 0;
+      flex: 5;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 340px;
+        height: 70px;
+      }
     }
 
     .navbar-toggler-element {
@@ -19,10 +29,11 @@
     }
 
     .navbar-collapse-element {
+      flex: 7;
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
-      padding-right: 0;
+      padding-right: 7vw;
     }
   }
 }
@@ -30,8 +41,11 @@
 .navbar-nav {
   .nav-item {
     .navbar-link-element {
+      text-align: center;
+      width: 93%;
       color: $text_navbar_color;
-      padding: 8px 25px;
+      margin: 7px 8px;
+      padding: 4px 10px;
       white-space: nowrap;
     }
   }
@@ -57,28 +71,13 @@
   }
 }
 
-@media screen and (min-width: 1640px) {
-  .navbar-branch-element {
-    width: 300px;
-    height: 65px;
-    margin-left: 150px !important;
-  }
-
-  .navbar-collapse-element {
-    font-family: $font_Open_Sans;
-    font-weight: 700;
-    font-size: 16px;
-    padding-right: 125px !important;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .header {
     height: 188px;
     position: relative;
     padding: 0;
 
-    .container {
+    .container-fluid {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -90,21 +89,17 @@
 
     .navbar-branch-element {
       padding-right: 0;
-      flex: 1;
+      flex: 7 !important;
       display: flex;
       align-items: flex-end;
-
-      img {
-        height: 61px ;
-      }
     }
 
     .navbar-collapse-element {
       font-family: $font_Open_Sans;
       font-weight: 700;
       font-size: 16px;
-      flex: 1;
-      padding: 0;
+      flex: 6 !important;
+      padding: 0 !important;
       
       ul {
         display: flex;
@@ -123,6 +118,17 @@
   }   
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar {
+    .navbar-branch-element {
+      img {
+        height: 62px ;
+        width: 300px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
   .header {
     height: 65px;
@@ -133,7 +139,7 @@
       background-color: #ffffff !important;
     }
 
-    .container {
+    .container-fluid {
       flex-direction: row-reverse;
     }
 
@@ -141,10 +147,10 @@
       flex: 11;
       align-items: center;
       justify-content: center;
-      padding-right: 30px;
+      padding-right: 30px !important;
 
       img {
-        height: 30px;
+        height: 30px !important;
         width: 150px !important;
       }
     }
@@ -174,7 +180,7 @@
 
 
   .fas {
-    font-size: 26px;
+    font-size: 22px;
   }
   
     .nav-item {

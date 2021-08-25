@@ -30,11 +30,10 @@
       border-radius: 35px;
       color: $view_all_our_courses_color;
       -webkit-text-stroke-width: 1px;
-      transition: transform .4s;
     }
 
     .btn:hover {
-      transform: scale(1.2);
+      color: $hapo_learn_button_text_hover !important;
     }
   }
 }
@@ -64,11 +63,11 @@
     margin-top: 60px;
 
     &-courses {
-      padding-right: 70px;
+      padding: 0px 50px;
     }
 
     &-learners {
-      padding-left: 70px;
+      padding-left: 0px 50px;
     }
 
     .item-name {
@@ -90,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   .become-a-member {
     height: 267px;
     margin-top: 60px;
@@ -128,18 +127,6 @@
 
     .specific-statistic {
       margin-top: 30px;
-
-      &-courses {
-        padding-right: 0px;
-        padding-left: 25px;
-        justify-content: start !important;
-      }
-
-      &-learners {
-        padding-left: 0px;
-        padding-right: 25px;
-        justify-content: flex-end !important;
-      }
 
       .item-name {
         font-size: 40px;
@@ -195,15 +182,11 @@
       margin-top: 25px;
 
       &-courses {
-        padding-left: 0px;
         margin-bottom: 30px;
-        justify-content: center !important;
       }
 
       &-learners {
-        padding-right: 0px;
         margin-top: 30px;
-        justify-content: center !important;
       }
 
       .item-name {
