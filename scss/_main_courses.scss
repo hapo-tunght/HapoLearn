@@ -46,10 +46,14 @@
 
 @media screen and (max-width: 2012px) and (min-width: 1600px) {
   .main-courses {
-   .row {
-    max-width: 62vw;
+    .row {
+      max-width: 62vw;
+    }
+
+    .card-content-body {
+      margin-bottom: 0;
+    }
   }
- }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {

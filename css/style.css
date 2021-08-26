@@ -430,6 +430,9 @@
   .main-courses .row {
     max-width: 62vw;
   }
+  .main-courses .card-content-body {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
@@ -669,8 +672,11 @@
 }
 
 @media screen and (max-width: 2012px) and (min-width: 1600px) {
-  .row-cover .row {
+  .other-courses .row {
     max-width: 62vw;
+  }
+  .other-courses .card-content-body {
+    margin-bottom: 0;
   }
 }
 
