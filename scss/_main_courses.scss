@@ -33,6 +33,7 @@
 
   .card-content-body {
     @include card_content_body ;
+    margin-bottom: 0;
   }
 
   .courses-button {
