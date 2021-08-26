@@ -76,6 +76,7 @@ $slick_arrow_color: #969494;
 
 @mixin card_content_body {
 	margin-top: 5px;
+	margin-bottom: 0;
 	font-family: $font_UTM_BryantLG;
 	font-size: 15px;
 	line-height: 20px;

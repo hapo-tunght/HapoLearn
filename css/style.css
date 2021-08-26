@@ -398,6 +398,7 @@
 
 .main-courses-item-card .card-content-body {
   margin-top: 5px;
+  margin-bottom: 0;
   font-family: "utm_bryantlgregular";
   font-size: 15px;
   line-height: 20px;
@@ -650,6 +651,7 @@
   width: 294px;
   height: 42px;
   letter-spacing: 0.5px;
+  margin-bottom: 0;
 }
 
 .other-courses-item-card .courses-button {
