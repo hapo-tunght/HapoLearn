@@ -127,11 +127,12 @@ $slick_arrow_color: #969494;
 
 @mixin courses_button_media_769px {
 	height: 27.5px;
-	width: 116.5px;
-	font-size: 12px;
+	width: 130px;
+	font-size: 14px;
 	line-height: 12.26px;
-	margin-top: 10px;
 	margin-bottom: 15px;
+	margin-top: 5px;
+	letter-spacing: -1px;
 }
  
 @mixin main_courses_item_card_media_575px {

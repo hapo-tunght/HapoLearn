@@ -23,6 +23,7 @@
       font-size: 45px;
       font-weight: 700;
       color: $hapo_learn_title_bold_text_color;
+      -webkit-text-stroke-width: 2px;
     }
 
     &-bold img {    
@@ -98,6 +99,7 @@
         font-weight: 700;
         color: $hapo_learn_title_bold_text_color;
         margin-top: 5px;
+        -webkit-text-stroke-width: 1.5px;
       }
 
       &-bold img {    
@@ -162,6 +164,7 @@
       &-bold {
         font-size: 25px;
         margin-top: 0;
+        -webkit-text-stroke-width: 1px;
       }
 
       &-quote {
@@ -172,6 +175,7 @@
       .btn {
         width: 265px;
         height: 50px;
+        font-size: 20px;
       }
     }
   }

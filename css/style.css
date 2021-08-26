@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 1024px) {
   .header {
-    height: 188px;
+    height: 170px;
     position: relative;
     padding: 0;
   }
@@ -94,7 +94,7 @@
   .header .navbar-collapse-element {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     flex: 6 !important;
     padding: 0 !important;
   }
@@ -192,6 +192,7 @@
   font-size: 45px;
   font-weight: 700;
   color: #11114E;
+  -webkit-text-stroke-width: 2px;
 }
 
 .hapo-learn-banner-content-bold img {
@@ -263,6 +264,7 @@
     font-weight: 700;
     color: #11114E;
     margin-top: 5px;
+    -webkit-text-stroke-width: 1.5px;
   }
   .hapo-learn-banner-content-bold img {
     height: 23px;
@@ -318,6 +320,7 @@
   .hapo-learn-banner-content-bold {
     font-size: 25px;
     margin-top: 0;
+    -webkit-text-stroke-width: 1px;
   }
   .hapo-learn-banner-content-quote {
     font-size: 16px;
@@ -326,6 +329,7 @@
   .hapo-learn-banner-content .btn {
     width: 265px;
     height: 50px;
+    font-size: 20px;
   }
   .linear-gradient {
     height: 230px;
@@ -422,13 +426,16 @@
   color: #11114E !important;
 }
 
-@media screen and (max-width: 1912px) and (min-width: 1600px) {
+@media screen and (max-width: 2012px) and (min-width: 1600px) {
   .main-courses .row {
-    padding: 0 200px;
+    max-width: 62vw;
   }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .main-courses .row {
+    padding: 0px !important;
+  }
   .main-courses-item-card .card-content-title {
     font-size: 25px;
     letter-spacing: -1.5px;
@@ -478,15 +485,16 @@
   }
   .main-courses-item-card .courses-button {
     height: 27.5px;
-    width: 116.5px;
-    font-size: 12px;
+    width: 130px;
+    font-size: 14px;
     line-height: 12.26px;
-    margin-top: 10px;
     margin-bottom: 15px;
+    margin-top: 5px;
+    letter-spacing: -1px;
   }
 }
 
-@media screen and (max-width: 710px) and (min-width: 576px) {
+@media screen and (max-width: 740px) and (min-width: 576px) {
   .main-courses .row {
     padding: 0;
   }
@@ -660,9 +668,9 @@
   color: #11114E !important;
 }
 
-@media screen and (max-width: 1912px) and (min-width: 1600px) {
+@media screen and (max-width: 2012px) and (min-width: 1600px) {
   .row-cover .row {
-    padding: 0 200px;
+    max-width: 62vw;
   }
 }
 
@@ -735,18 +743,20 @@
     -webkit-line-clamp: 3;
     width: 198px;
     height: 65px;
+    margin-top: 3px;
   }
   .other-courses-item-card .courses-button {
     height: 27.5px;
-    width: 116.5px;
-    font-size: 12px;
+    width: 130px;
+    font-size: 14px;
     line-height: 12.26px;
-    margin-top: 10px;
     margin-bottom: 15px;
+    margin-top: 5px;
+    letter-spacing: -1px;
   }
 }
 
-@media screen and (max-width: 710px) and (min-width: 576px) {
+@media screen and (max-width: 740px) and (min-width: 576px) {
   .other-courses .row {
     padding: 0;
   }
@@ -855,6 +865,7 @@
   line-height: 34px;
   letter-spacing: 7px;
   align-items: center;
+  color: #ffffff;
 }
 
 .why-hpl-banner .multi-device-image {
@@ -901,11 +912,14 @@
   }
   .why-hpl-banner .why-hpl-text .text-content {
     height: 25px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 30px;
     margin-bottom: 10px;
-    margin-left: 20px;
     overflow: hidden;
+    letter-spacing: -0.9px;
+    text-align: right;
+    position: relative;
+    left: 10px;
   }
   .why-hpl-banner .why-hpl-text .fa-check-circle {
     font-size: 18px;
@@ -936,6 +950,7 @@
   }
   .why-hpl-banner .why-hpl-text {
     margin-top: 50px;
+    padding-left: 0 !important;
   }
   .why-hpl-banner .why-hpl-text-title {
     width: 228px;
@@ -944,14 +959,18 @@
     line-height: 40px;
     text-align: left;
     position: relative;
-    left: 20%;
+    left: 15%;
     bottom: 20px;
   }
   .why-hpl-banner .why-hpl-text .text-content {
+    width: 100%;
     font-size: 15px;
+    font-weight: 400;
     line-height: 24.5px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 25px;
+    text-align: center;
   }
   .why-hpl-banner .why-hpl-text .fa-check-circle {
     font-size: 18px;
@@ -1274,7 +1293,7 @@
   font-size: 80px;
   line-height: 98px;
   color: #11114E;
-  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-width: 2px;
 }
 
 .statistic-title-underline {
@@ -1546,6 +1565,12 @@
   }
 }
 
+@media screen and (min-width: 576px) and (max-width: 700px) {
+  .footer .brand-logo-cover {
+    padding-left: 0 !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .footer {
     margin-top: 50px;
@@ -1578,6 +1603,7 @@
   .footer-content .first-column {
     padding-left: 0px;
     padding-right: 50px;
+    margin-right: 30px;
   }
   .footer-content .second-column {
     padding-left: 65px;
@@ -1657,6 +1683,10 @@
 
 .login-register-form .font-weight-bold {
   margin-bottom: 0;
+}
+
+.login-register-form .form-check-custom {
+  margin-left: 0 !important;
 }
 
 .login-register-form .form-check-label {
@@ -1866,7 +1896,7 @@
     margin-top: 10px;
   }
   .login-register-form .form-check-label {
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 0 !important;
   }
   .login-register-form .form-check-input {
@@ -1877,13 +1907,14 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   .form-check-custom {
-    align-items: flex-start !important;
+    align-items: center !important;
   }
   .form-check-custom .form-check-input {
     width: 14px;
     height: 14px;
+    margin-left: 0;
   }
   .form-check-custom a {
     text-align: center !important;
@@ -1893,9 +1924,12 @@
   .form-check-custom .form-check-label {
     padding-right: 5px;
   }
+  .form-check-custom .text-right {
+    text-align: end !important;
+  }
   .login-register-form .font-weight-bold {
     margin-top: 2px !important;
-    margin-left: 5px !important;
+    margin-left: 10px !important;
     font-size: 15px !important;
     letter-spacing: -0.5px;
   }

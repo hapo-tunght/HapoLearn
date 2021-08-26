@@ -44,15 +44,21 @@
   }
 }
 
-@media screen and (max-width: 1912px) and (min-width: 1600px) {
+@media screen and (max-width: 2012px) and (min-width: 1600px) {
   .main-courses {
    .row {
-    padding: 0 200px ;
+    max-width: 62vw;
   }
  }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .main-courses {
+    .row {
+      padding: 0px !important;
+    }
+  }
+
   .main-courses-item-card {
     .card-content-title {
       font-size: 25px;
@@ -99,7 +105,7 @@
   }
 }
 
-@media screen and (max-width: 710px) and (min-width: 576px) {
+@media screen and (max-width: 740px) and (min-width: 576px) {
   .main-courses {
     .row {
       padding: 0;

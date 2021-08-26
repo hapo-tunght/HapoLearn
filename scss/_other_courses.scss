@@ -94,10 +94,10 @@
 	}
 }
 
-@media screen and (max-width: 1912px) and (min-width: 1600px) {
+@media screen and (max-width: 2012px) and (min-width: 1600px) {
   .row-cover {
 		.row {
-			padding: 0 200px ;
+			max-width: 62vw;
 		}
   }
 }
@@ -178,6 +178,7 @@
 				-webkit-box-orient: vertical; 
 				width: 198px;
 				height: 65px;
+				margin-top: 3px
 			}
 			
 			.courses-button {
@@ -187,7 +188,7 @@
 	}
 }
 
-@media screen and (max-width: 710px) and (min-width: 576px) {
+@media screen and (max-width: 740px) and (min-width: 576px) {
   .other-courses {
     .row {
       padding: 0;
