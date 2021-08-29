@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) and (min-width: 1024px) {
+@media screen and (max-width: 1300px) and (min-width: 1025px) {
   .main-courses {
     .row {
       padding: 0px !important;
@@ -81,6 +81,11 @@
 
       &-content {
         padding: 0;
+      }
+
+      .custom-image {
+        max-width: 100%;
+        height: auto;
       }
 
       .front-end-image {
