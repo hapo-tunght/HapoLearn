@@ -1708,9 +1708,12 @@
   justify-content: center;
 }
 
+.login-register-form .form-check-label p {
+  cursor: pointer;
+}
+
 .login-register-form .font-weight-bold {
   padding-right: 15px;
-  cursor: pointer;
 }
 
 .login-register-form .form-check-input {

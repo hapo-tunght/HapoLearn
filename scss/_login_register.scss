@@ -77,9 +77,12 @@
     justify-content: center;
   }
 
+  .form-check-label p {
+    cursor: pointer;
+  }
+
   .font-weight-bold {
     padding-right: 15px;
-    cursor: pointer;
   }
 
   .form-check-input {
