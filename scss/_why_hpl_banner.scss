@@ -1,7 +1,7 @@
 .why-hpl-banner {
   height: 740px;
   margin-top: 110px;
-  background: url(/assets/img/why_hpl_background.png);
+  background: url(../assets/img/why_hpl_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -27,7 +27,7 @@
       line-height: 24.5px;
       letter-spacing: -1px;
       margin-bottom: 15px;
-  }
+    }
 
     .fa-check-circle {
       font-size: 26px;
@@ -35,11 +35,12 @@
       line-height: 34px;
       letter-spacing: 7px;
       align-items: center;
+      color: $white_color;
     }  
   }
 
   .multi-device-image {
-    background-image: url(/assets/img/multi_device.png);
+    background-image: url(../assets/img/multi_device.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 783px;
@@ -47,7 +48,7 @@
   }
 
   .single-device-image {
-    background-image: url(/assets/img/single_laptop.png);
+    background-image: url(../assets/img/single_laptop.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 478px;
@@ -59,7 +60,15 @@
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1912px) and (min-width: 1500px) {
+  .why-hpl-banner {
+    .why-hpl-text {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .why-hpl-banner {
     height: 395px;
     margin-top: 80px;
@@ -78,11 +87,14 @@
 
       .text-content {
         height: 25px;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 30px;
         margin-bottom: 10px;
-        margin-left: 20px;
         overflow: hidden;
+        letter-spacing: -0.9px;
+        text-align: right;
+        position: relative;
+        left: 10px;
       }
 
       .fa-check-circle {
@@ -118,6 +130,7 @@
 
     .why-hpl-text {
       margin-top: 50px;
+      padding-left: 0 !important;
 
       &-title { 
         width: 228px;
@@ -126,15 +139,19 @@
         line-height: 40px;
         text-align: left;
         position: relative;
-        left: 20%;
+        left: 15%;
         bottom: 20px;
       }
 
       .text-content {
+        width: 100%;
         font-size: 15px;
+        font-weight: 400;
         line-height: 24.5px;
         margin-bottom: 10px;
-        margin-left: 20px;
+        margin-left: 0;
+        margin-right: 25px;
+        text-align: center;
       }
 
       .fa-check-circle {
@@ -159,5 +176,21 @@
       left: 10px;
       top: -100px;
     }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .why-hpl-text {
+    padding-right: 5px;
+
+    .text-content {
+      font-size: 14px !important;
+      letter-spacing: -1px !important;
+    }
+  }
+
+  .multi-device-image {
+    padding-left: 0;
+    margin-left: 50px !important;
   }
 }

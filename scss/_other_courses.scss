@@ -1,3 +1,9 @@
+.row-cover {
+  .row {
+  padding: 0 45px ;
+  }
+}
+
 .other-courses {
 	margin-top: 100px;
 
@@ -29,7 +35,6 @@
 		text-decoration: none;
 		-webkit-text-stroke-width: 1.5px;
 		cursor: pointer;
-		transition: transform .4s;
 
 		img {
 			margin-left: 20px;
@@ -78,6 +83,7 @@
 		width: 294px;
 		height: 42px;
 		letter-spacing: 0.5px;
+		margin-bottom: 0;
 	}
 
 	.courses-button {
@@ -89,12 +95,32 @@
 	}
 }
 
- .card:hover {
-		transform: translateY(-15px);
-		transition: transform 0.3s;
+@media screen and (max-width: 2012px) and (min-width: 1600px) {
+  .other-courses {
+		.row {
+			max-width: 62vw;
+		}
+
+		.card-content-body {
+      margin-bottom: 0;
+    }
+  }
 }
-	
-@media screen and (max-width: 769px) {
+
+@media screen and (max-width: 1300px) and (min-width: 1024px) {
+  .other-courses-item-card {
+    .card-content-title {
+      font-size: 25px;
+      letter-spacing: -1.5px;
+    }
+
+		.card-content-body {
+			width: fit-content;
+		}
+  }
+}
+
+@media screen and (max-width: 1024px) {
 	.other-courses {
 		margin-top: 40px;
 
@@ -144,12 +170,20 @@
 
 			.card-content-title {
 				font-size: 18px !important;
+				line-height: 20px !important;
 				@include card_content_title_media_769px ;
 			}
 
 			.card-content-body {
-				margin-top: 5px;
-				@include card_content_body_media_769px ;
+				font-size: 14px;
+				overflow: hidden;
+				line-height: 18.75px;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical; 
+				width: 198px;
+				height: 65px;
+				margin-top: 3px
 			}
 			
 			.courses-button {
@@ -157,6 +191,23 @@
 			}
 		}
 	}
+}
+
+@media screen and (max-width: 740px) and (min-width: 576px) {
+  .other-courses {
+    .row {
+      padding: 0;
+    }
+  }
+
+  .other-courses-item-card {
+    .card-content-body {
+      font-size: 14px;
+      letter-spacing: -1px;
+      width: fit-content;
+      overflow: hidden;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -205,7 +256,8 @@
 			}
 
 			.card-content-body {
-				@include card_content_body_media_575px ;
+				@include main_courses_card_content_media_575px ;
+				letter-spacing: -0.5px
 			}
 			
 			.courses-button {

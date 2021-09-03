@@ -23,40 +23,44 @@
 </head>
 <body class="p-0">
     <!-- HEADER -->
-    <header id="header" class="container-fluid position-relative header">
+    <header id="header" class="container-fluid position-relative p-0 header">
         <nav class="navbar container-fluid navbar-expand-sm h-100 navbar-light bg-light sticky-top navbar-element">
-            <a class="navbar-branch navbar-branch-element" href="#">
-                <img class="w-100 h-100" src="./assets/img/hapo_learn.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler navbar-toggler-element " type="button" data-toggle="collapse" 
-            data-target="#navbarReponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse col-xs-12 navbar-collapse-element" id="navbarReponsive">
-                <ul class="navbar-nav w-100 h-100 d-flex justify-content-end">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link active navbar-link-element">HOME</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a href="#" class="nav-link navbar-link-element">ALL COURSES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link navbar-link-element" data-toggle="modal" data-target="#modalLogin">LOGIN/REGISTER</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link navbar-link-element">PROFILE</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="container-fluid navbar-cover p-0 w-100 h-100">
+                <a class="navbar-branch navbar-branch-element col-sm-12" href="#">
+                    <img src="./assets/img/hapo_learn_header.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler navbar-toggler-element" type="button" data-toggle="collapse"
+                    data-target="#navbarReponsive">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times d-none"></i>
+                </button>
+                <div class="collapse navbar-collapse col-xs-12 col-sm-12 navbar-collapse-element" id="navbarReponsive">
+                    <ul class="navbar-nav w-100 d-flex justify-content-end">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active navbar-link-element">HOME</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link navbar-link-element">ALL COURSES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navbar-link-element" data-toggle="modal"
+                                data-target="#modalLogin">LOGIN/REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link navbar-link-element">PROFILE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>           
         </nav>
     </header>
     <!-- CLOSE HEADER -->
 
     <!-- BODY -->
-    <div id="body" class="body container-fluid position-relative p-0">
+    <div id="body" class="body container-fluid position-relative p-0 w-100">
         <!-- HapoLearn banner -->
         <div class="hapo-learn-banner container-fluid d-flex align-items-center">         
-            <div class="hapo-learn-banner-content container pl-lg-4 d-flex flex-column p-0">
+            <div class="hapo-learn-banner-content container d-flex flex-column">
                 <span class="hapo-learn-banner-content-title d-block">
                     Learn Anytime, Anywhere
                 </span>
@@ -66,58 +70,57 @@
                 <span class=" hapo-learn-banner-content-quote d-block">
                     Interactive lessons, "on-the-go" <br> practice, peer support.
                 </span>
-                <button class="btn d-block algin-middle" type="button">
+                <a href="#" class="btn d-flex justify-content-center align-items-center" type="button">
                     Start Learning Now! 
-                </button>
-            </div>
-            
+                </a>
+            </div>           
         </div>
         <div class="linear-gradient">
             <div class="transition-block"></div>
         </div>
 
         <!-- Main courses -->
-        <div class="main-courses container ">
-            <div class="row mb-0 mr-0 ml-0 w-100">
+        <div class="main-courses container-fluid p-0 d-flex justify-content-center ">
+            <div class="row col-lg-10 col-sm-12 mb-0">
                 <div class="main-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
                     <div class="main-courses-item-card card h-100 ">
                         <div class="front-end-image card-header d-flex align-items-center justify-content-center">
-                            <img class="" src="./assets/img/rectangle_7.png" alt="HTML/CSS/js">                          
+                            <img class="custom-image" src="./assets/img/rectangle_7.png" alt="HTML/CSS/js">                          
                         </div>
                         <div class="main-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">HTML/CSS/js Tutorial</h4>
+                            <p class="card-content-title card-title">HTML/CSS/js Tutorial</p>
                             <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media. I had coded quite a bit, but never touched
                             anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
+                            <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This Course</a>
                         </div>
                     </div>
                 </div>
                 <div class="main-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
                     <div class="main-courses-item-card card h-100">
                         <div class="laravel-image card-header d-flex align-items-center justify-content-center">
-                            <img src="./assets/img/laravel_1_logo_black_and_white_1.png" alt="laravel">                         
+                            <img class="custom-image" src="./assets/img/laravel_1_logo_black_and_white_1.png" alt="laravel">                         
                         </div>
                         <div class="main-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">LARAVEL Tutorial</h4>
+                            <p class="card-content-title card-title">LARAVEL Tutorial</p>
                             <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media. I had coded quite a bit, but never touched
                             anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
+                            <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This Course</a>
                         </div>
                     </div>
                 </div>
                 <div class="main-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
                     <div class="main-courses-item-card card h-100">
                         <div class="php-image card-header d-flex align-items-center justify-content-center">
-                            <img src="./assets/img/rectangle_15.png" alt="php">                          
+                            <img class="custom-image" src="./assets/img/rectangle_15.png" alt="php">                          
                         </div>
                         <div class="main-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">PHP Tutorial</h4>
+                            <p class="card-content-title card-title">PHP Tutorial</p>
                             <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media. I had coded quite a bit, but never touched
                             anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
+                            <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This Course</a>
                         </div>
                     </div>
                 </div>
@@ -125,51 +128,59 @@
         </div>
 
         <!-- Other Courses -->
-        <div class="other-courses container">
+        <div class="other-courses container-fluid p-0">
             <div class="other-courses-title d-flex justify-content-center">Other courses</div>
             <div class="other-courses-title-underline mx-auto"></div>
-            <div class="row mb-0 mr-0 ml-0 w-100">
-                <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
-                    <div class="other-courses-item-card card h-100 ">
-                        <div class="css-image cover-image d-flex align-items-center justify-content-center">
-                            <img class="custom-image" src="./assets/img/css_course.png" alt="css">
-                        </div>
-                        <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">CSS Tutorial</h4>
-                            <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. <br> I had coded quite a bit, but never touched
-                            anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
-                    <div class="other-courses-item-card card h-100">
-                        <div class="rails-image cover-image d-flex align-items-center justify-content-center">
-                            <img class="custom-image" src="./assets/img/rails_course.png" alt="rails">
-                        </div>
-                        <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">Ruby on rails Tutorial</h4>
-                            <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. <br> I had coded quite a bit, but never touched
-                            anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
+            <div class="row-cover h-100 d-flex justify-content-center">
+                <div class="row mb-0 col-lg-10 col-sm-12">
+                    <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
+                        <div class="other-courses-item-card card h-100 ">
+                            <div class="css-image cover-image d-flex align-items-center justify-content-center">
+                                <img class="custom-image" src="./assets/img/css_course.png" alt="css">
+                            </div>
+                            <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
+                                <p class="card-content-title card-title">CSS Tutorial</p>
+                                <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering
+                                    New Media. <br> I had coded quite a bit, but never touched
+                                    anything in regards to web development.</p>
+                                <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This
+                                    Course</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
-                    <div class="other-courses-item-card card h-100">
-                        <div class="java-image cover-image d-flex align-items-center justify-content-center">
-                            <img class="custom-image" src="./assets/img/java_1.png" alt="java">
+                    <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
+                        <div class="other-courses-item-card card h-100">
+                            <div class="rails-image cover-image d-flex align-items-center justify-content-center">
+                                <img class="custom-image" src="./assets/img/rails_course.png" alt="rails">
+                            </div>
+                            <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
+                                <p class="card-content-title card-title">Ruby on rails Tutorial</p>
+                                <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering
+                                    New Media. <br> I had coded quite a bit, but never touched
+                                    anything in regards to web development.</p>
+                                <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This
+                                    Course</a>
+                            </div>
                         </div>
-                        <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
-                            <h4 class="card-content-title card-title">Java Tutorial</h4>
-                            <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. <br> I had coded quite a bit, but never touched
-                            anything in regards to web development.</p>
-                            <a href="#" class="btn courses-button">Take This Course</a>
+                    </div>
+                    <div class="other-courses-item col-sm-4 p-sm-0 d-flex justify-content-center">
+                        <div class="other-courses-item-card card h-100">
+                            <div class="java-image cover-image d-flex align-items-center justify-content-center">
+                                <img class="custom-image" src="./assets/img/java_1.png" alt="java">
+                            </div>
+                            <div class="other-courses-item-card-content card-body d-flex flex-column align-items-center">
+                                <p class="card-content-title card-title">Java Tutorial</p>
+                                <p class="card-content-body card-text">I knew hardly anything about HTML, JS, and CSS before entering
+                                    New Media. <br> I had coded quite a bit, but never touched
+                                    anything in regards to web development.</p>
+                                <a href="#" class="btn courses-button d-flex justify-content-center align-items-center">Take This
+                                    Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="view-all-our-courses d-flex justify-content-center" href="#">
+            <a class="view-all-our-courses container d-flex justify-content-center" href="#">
                 View All Our Courses 
                 <span>
                     <img src="./assets/img/right_arrow.png" alt="arrow">
@@ -179,25 +190,25 @@
 
         <!-- Why-hapolearn-banner -->
         <div class="why-hpl-banner container-fluid p-0">
-            <div class="row w-100 h-100 align-items-center">
-                <div class="why-hpl-text col-sm-6 d-flex flex-column align-items-center">
+            <div class="row w-100 h-100 align-items-center m-0">
+                <div class="why-hpl-text col-sm-6 d-flex flex-column align-items-center pr-0">
                     <div class="why-hpl-text-title">
-                        <h3>Why HapoLearn?</h3>
+                        <p>Why HapoLearn?</p>
                     </div>
                     <div class="text-content">
-                        <i class="far fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
+                        <i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
                     </div>
                     <div class="text-content">
-                        <i class="far fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
+                        <i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
                     </div>
                     <div class="text-content">
-                        <i class="far fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
+                        <i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
                     </div>
                     <div class="text-content">
-                        <i class="far fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
+                        <i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
                     </div>
                     <div class="text-content">
-                        <i class="far fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
+                        <i class="fas fa-check-circle"></i>Interactive lessons, "on-the-go" practice, peer support.
                     </div>
                 </div>
                 <div class="multi-device-image col-sm-6 d-flex align-items-center"></div>
@@ -313,17 +324,17 @@
         <div class="become-a-member container-fluid d-flex justify-content-center align-items-center ">
             <div class="become-a-member-content col-md-6 d-flex flex-column align-items-center">
                 <p>Become a member of our growing community!</p>
-                <a class="btn d-flex justify-content-center align-items-center" href="#">Learning Now!</a>
+                <a class="btn d-flex justify-content-center align-items-center" href="#">Start Learning Now!</a>
             </div>
         </div>
         <div class="statistic container-fluid p-0 d-flex flex-column">
             <div class="statistic-title d-flex flex-column mx-auto">
-                <h1>Statistic</h1>
+                <p>Statistic</p>
                 <div class="statistic-title-underline"></div>
             </div>
             <div class="specific-statistic container-fluid p-0">
                 <div class="row w-100 h-100 m-0">
-                    <div class="specific-statistic-courses col-sm-4 d-flex justify-content-end">
+                    <div class="specific-statistic-courses col-sm-4 d-flex justify-content-center">
                         <div class="item-name">
                             Courses
                             <div class="item-number">1,586</div>
@@ -335,7 +346,7 @@
                             <div class="item-number">2,689</div>
                         </div>                       
                     </div>
-                    <div class="specific-statistic-learners col-sm-4 d-flex justify-content-start">
+                    <div class="specific-statistic-learners col-sm-4 d-flex justify-content-center">
                         <div class="item-name">
                             Learners
                             <div class="item-number">16,882</div>
@@ -356,7 +367,7 @@
     <footer id="footer" class="footer container-fluid p-0">
         <div class="footer-content w-100">
             <div class="row w-100 h-100 m-0 d-flex align-items-center justify-content-center">
-                <div class="brand-logo col-sm-4 p-0">
+                <div class="brand-logo col-sm-4 col-6 order-sm-first p-0">
                     <div class="brand-logo-cover d-flex flex-column align-items-center pl-4 pr-3">
                         <div class="brand-logo-img">
                             <a href="#" class="h-100 w-100"></a>
@@ -366,7 +377,7 @@
                         </div>
                     </div>                   
                 </div>
-                <div class="list-item col-sm-4 p-0 d-flex justify-content-center">
+                <div class="list-item col-sm-4 col-12 order-first p-0 d-flex justify-content-center">
                     <div class="first-column mt-4 d-flex flex-column">
                         <a href="#" class="item-link">Home</a>
                         <a href="#" class="item-link">Features</a>
@@ -379,7 +390,7 @@
                         <a href="#" class="item-link">FAQ</a>
                     </div>
                 </div>
-                <div class="contact-us col-sm-4 d-flex align-items-center">
+                <div class="contact-us col-sm-4 col-6 order-last d-flex align-items-center">
                         <a href="facebook.com/tuyen.dung.haposoft" class="contact-icon contact-facebook" tabindex="0" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="facebook.com/tuyen.dung.haposoft">
                         </a>
                         <a href="#" class="contact-icon contact-phone" tabindex="0" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="+84-85-645-9898">
@@ -417,14 +428,14 @@
                         <form action="/action_page.php" class="container ">
                             <div class="form-group login-username">
                                 <label for="username">Username:</label>
-                                <input type="text" class="form-control" placeholder="Enter username" id="username">
+                                <input type="text" class="form-control" id="username">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                <input type="password" class="form-control" id="pwd">
                             </div>
-                            <div class="form-group form-check d-flex w-100 m-0 align-items-center">
-                                <label class="form-check-label w-50 ml-3">
+                            <div class="form-group form-check-custom d-flex w-100 align-items-center">
+                                <label class="form-check-label w-50">
                                     <input class="form-check-input pr-2" type="checkbox">
                                     <p class="ml-2 font-weight-bold">Remember me</p> 
                                 </label>
@@ -452,19 +463,19 @@
                         <form action="/action_page.php" class="container register-form">
                             <div class="form-group register-username">
                                 <label for="username">Username:</label>
-                                <input type="text" class="form-control" placeholder="Enter username" id="username">
+                                <input type="text" class="form-control" id="username">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                                <input type="email" class="form-control" id="email">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                                <input type="password" class="form-control" id="pwd">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Repeat Password:</label>
-                                <input type="password" class="form-control" placeholder="Enter repeat password" id="pwd">
+                                <input type="password" class="form-control" id="pwd">
                             </div>
                             <div class="button-cover w-100 d-flex justify-content-center">
                                 <button type="submit" class="btn button-register">REGISTER</button>
